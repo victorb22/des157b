@@ -1,5 +1,6 @@
 (function() {
     'use strict';
+    console.log('reading js');
 
     const button = document.querySelector('button');
     const body = document.querySelector('body');
@@ -33,6 +34,7 @@
             banner.removeAttribute('class');
             button.removeAttribute('class');
             banner.removeAttribute('class');
+            bannerText.removeAttribute('class');
             cream.removeAttribute('class');
             orange.removeAttribute('class');
             dgreen.removeAttribute('class');

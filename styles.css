@@ -18,7 +18,7 @@ body {
 
 body.switch {
     background-color: #FFFDF2;
-    color: #06402b;
+    color: #0A553A;
 }
 
 #container {
@@ -35,28 +35,34 @@ header {
     margin: 0 auto 2em auto;
 }
 
+header h1{
+    font-family: 'Poppins', 'sans-serif';
+}
+
 #banner {
     position: relative;
     display: flex;
-    width: 1100px;
+    width: 1200px;
     height: 250px;
     margin: auto;
-    border: 1px solid rgb(235, 235, 235);
-    color: #06402b;
-    overflow: hidden;
-    /* display: grid; */
-	/* place-items: center; */
+    background-color: #FFFDF2;
+    transition: all 2s;
 }
 
 #banner.switch {
-    background-color: #333;
-    color: rgb(235, 235, 235);
+    background-color: #FFFDF2;
     transition: all 2s;
 }
 
 #black{
     background-color: black;
     width: 17px;
+    transition: all 2s;
+}
+
+#black:hover{
+    transform: scaleX(2.2);
+    transition: all 1s;
 }
 
 #black.switch{
@@ -67,6 +73,12 @@ header {
 #green{
     background-color: #0A553A;
     width: 27px;
+    transition: all 2s;
+}
+
+#green:hover{
+    transform: scaleX(1.5);
+    transition: all 1s;
 }
 
 #green.switch{
@@ -77,6 +89,12 @@ header {
 #dgreen{
     background-color: #042B1D;
     width: 32px;
+    transition: all 2s;
+}
+
+#dgreen:hover{
+    transform: scaleX(1.5);
+    transition: all 1s;
 }
 
 #dgreen.switch{
@@ -87,6 +105,12 @@ header {
 #orange{
     background-color: orange;
     width: 57px;
+    transition: all 2s;
+}
+
+#orange:hover{
+    transform: scaleX(1.5);
+    transition: all 1s;
 }
 
 #orange.switch{
@@ -96,12 +120,15 @@ header {
 
 #cream{
     background-color: #FFFDF2;
-    width: 967px;
+    width: 990px;
+    /* 967 */
     position: relative;
+    transition: all 2s;
 }
 
 #cream.switch{
-    width: 559px;
+    width: 670px;
+    /* 559 */
     transition: all 2s;
 }
 
@@ -112,26 +139,43 @@ header {
     color: #06402b;
     font-family: 'Boldonse', 'sans-serif';
     font-size: 4em;
+    text-align: left;
+    transition: all 2s;
+}
+
+#textBanner:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+    cursor: pointer;
 }
 
 #textBanner.switch{
-    left: 725px;
+    left: 820px;
     top: 25px;
     text-align: right;
     transition: all 2s;
+    color: orange;
 }
 
 main {
     display: flex;
     justify-content: space-evenly;
-    margin: 1em auto;
+    margin: .75em auto;
 }
 
 main section {
     flex: 1;
-    border: 1px rgb(235, 235, 235) dashed;
-    margin: 0 .25em;
-    padding: 1em;
+    margin: 0.25em;
+    padding: .5em;
+    border-radius: 15px;
+    border: 1px solid #0A553A;
+    background-color: #ffffff10;      
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+main section:hover{
+    transform: scale(1.02);
+    transition: all 1s;
 }
 
 a {
@@ -144,52 +188,68 @@ nav ol, nav ul {
     padding-left: 0;
 }
 
+h3{
+    font-family: 'Boldonse', 'sans-serif';
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 25px;
+}
+
 section li {
-    padding-left: 1.2em;
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: 'Poppins', 'sans-serif';
 }
 
 section a {
-    line-height: 1.1em;
+    line-height: 1em;
     display: inline-block;
-    padding: .5em;
+    padding: 8px;
+    width: 275px;
+    border-radius: 5px;
     color: orange;
 }
 
 section a:hover {
     background-color: orange;
-    color: #333;
+    color: white;
 }
 
 section.switch a {
-    color: #333;
+    color: #042B1D;
 }
 
 section.switch a:hover {
-    background-color: #333;
-    color: rgb(235, 235, 235);
+    background-color: #11734f;
+    color: white;
 }
 
 button {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 35px;
+    right: 15px;
     padding: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: orange;
-    color: #333;
+    color: white;
     border: 1px solid transparent;
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 1em;
+    border-radius: 5px;
 }
 
 button:hover {
-    background-color: coral;
+    background-color: rgb(227, 147, 0);
+    color: aliceblue;
     cursor: pointer;
 }
 
 button.switch {
-    background-color: rgb(235, 235, 235);
-    border-color: #333;
+    background-color: #0A553A;
+    border-color: white;
 }
 
 button.switch:hover {
-    background-color: #333;
-    color: rgb(235, 235, 235)
+    background-color: #08442e;
 }
