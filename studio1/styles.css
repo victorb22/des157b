@@ -11,12 +11,7 @@
   }
 
   #poem{
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    background-color: bisque;
-    border: 1px solid transparent;
-    font-family: 'Poppins', 'sans-serif';
+
   }
 
   .hidden{
@@ -25,4 +20,34 @@
 
   .showing{
     display: block;
+  }
+
+  #line1{
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    background-color: bisque;
+    font-family: 'Boldonse', 'sans-serif';
+    font-size: 2em;
+    padding: 15px;
+  }
+
+  #line2{
+    position: absolute;
+    top: 350px;
+    left: 350px;
+    background-color: bisque;
+    font-family: 'Boldonse', 'sans-serif';
+    font-size: 2em;
+    padding: 15px;
+  }
+
+  #line3{
+    position: absolute;
+    top: 550px;
+    left: 550px;
+    background-color: bisque;
+    font-family: 'Boldonse', 'sans-serif';
+    font-size: 2em;
+    padding: 15px;
   }
