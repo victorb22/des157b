@@ -1,0 +1,16 @@
+{
+    "Monday Driving" : 1.0,
+    "Monday Biking" : 0.0,
+    "Tuesday Driving" : 2.7,
+    "Tuesday Biking" : 2.0,
+    "Wednesday Driving" : 0.5,
+    "Wednesday Biking" : 1.0,
+    "Thursday Driving" : 2.7,
+    "Thursday Biking" : 2.0,
+    "Friday Driving" : 2.7,
+    "Friday Biking" : 0.0,
+    "Saturday Driving" : 64.0,
+    "Saturday Biking" : 0.0,
+    "Sunday Driving" : 44.0,
+    "Sunday Biking" : 0.0
+}
