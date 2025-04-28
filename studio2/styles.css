@@ -8,7 +8,87 @@ h1{
     padding: 30px;
 }
 
+#week{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: flex;
+    gap: 15px;
+}
+
+#monc:hover{
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🚙</text></svg>") 16 0,auto;
+}
+
+#monb:hover{
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🚲</text></svg>") 16 0,auto;
+}
+
+#tuesc:hover{
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🚙</text></svg>") 16 0,auto;
+}
+
+#tuesb:hover{
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🚲</text></svg>") 16 0,auto;
+}
+
+#wednesc:hover{
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🚙</text></svg>") 16 0,auto;
+}
+
+#wednesb:hover{
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🚲</text></svg>") 16 0,auto;
+}
+
+#thursc{
+    width: 85px;
+}
+
+#thursb{
+    width: 70px;
+}
+
+#thursc:hover{
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🚙</text></svg>") 16 0,auto;
+}
+
+#thursb:hover{
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🚲</text></svg>") 16 0,auto;
+}
+
+#fric:hover{
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🚙</text></svg>") 16 0,auto;
+}
+
+#frib:hover{
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🚲</text></svg>") 16 0,auto;
+}
+
+#saturc:hover{
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🚙</text></svg>") 16 0,auto;
+}
+
+#saturb:hover{
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🚲</text></svg>") 16 0,auto;
+}
+
+#sunc:hover{
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🚙</text></svg>") 16 0,auto;
+}
+
+#sunb:hover{
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🚲</text></svg>") 16 0,auto;
+}
+
+.sectionDay{
+    height: 400px;
+    width: 65px;
+}
+
 #distance{
+    position: relative;
     display: flex;
     justify-content: center;
 }
@@ -20,4 +100,16 @@ h1{
     font-family: 'Poppins', 'sans-serif';
     font-size: 1.25em;
     margin-top: 30px;
+}
+
+#result {
+    background: #833AB4;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);    padding: 20px;
+    text-align: center;
+    color: white;
+    font-family: 'Special Gothic Expanded One', 'sans-serif';
+    text-align: center;
+    width: 1150px;
+    margin: 20px auto auto auto;
+    font-size: 1.5em;
 }
