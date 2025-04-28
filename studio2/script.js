@@ -11,7 +11,7 @@
 
     function outputResults(data){
         document.querySelector('#monc').addEventListener('mouseover', function() {
-            document.querySelector('#result').innerHTML = `<p>Monday Driving: ${data['Monday Driving']} miles</p>`;
+            document.querySelector('#result').innerHTML = `<p>Monday Driving: ${data['Monday Driving']} mile</p>`;
         });
         document.querySelector('#monb').addEventListener('mouseover', function() {
             document.querySelector('#result').innerHTML = `<p>Monday Biking: ${data['Monday Biking']} miles</p>`;
@@ -64,7 +64,7 @@
             document.querySelector('#result').innerHTML = `<p>Sunday Biking: ${data['Sunday Biking']} miles</p>`;
         });
     }
-    
+
     getData();
 
 }());
