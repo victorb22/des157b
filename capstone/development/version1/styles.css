@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fdfdfd;
+  color: #111;
+  padding: 1em;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+  border-bottom: 5px double black;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+#topSection {
+  display: flex;
+  gap: 1100px;
+  width: 100%;
+  margin-bottom: -15px;
+}
+
+#search {
+ 
+}
+
+#logIn{
+  background-color: #567B94;
+  color: white;
+  border: solid rgb(242, 242, 242);
+  padding: 5px;
+  border-radius: 4px;
+  font-size: .70em;
+  font-family: 'Arial', 'sans-serif';
+  font-weight: 700;
+}
+
+/* navigation styling */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  margin-top: 0.5rem;
+  margin: auto;
+  flex: 2;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #111;
+  font-size: 0.70em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Arial', sans-serif;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+
+#test1 {
+align-items: flex-end;
+}
+
+
+#midSection {
+  display: flex;
+  margin-top: 10px;
+}
+
+#fixL {
+  display: flex;
+  flex-direction: column;
+}
+
+#timePeriod {
+  flex: 1;
+  max-height: 20px;
+}
+
+#years {
+  margin-top: 5px;
+  display: flex;
+  justify-items: flex-start;
+}
+
+.site-title {
+  font-family: 'Ancient Medium', 'serif';
+  font-size: 2.5em;
+  margin-top: 0px;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.5px;
+  align-items: center;
+  flex: 10;
+  margin-top: 5px;
+}
+
+#typeFilter {
+  flex: 1;
+  max-height: 20px;
+}
+
+.main-nav1 ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+  margin-top: 0;
+}
+
+.main-nav1 a {
+  text-decoration: none;
+  color: #111;
+  font-size: .90em;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  font-family: 'Arial', sans-serif;
+}
+
+.main-nav1 a:hover {
+  text-decoration: underline;
+}
+
+
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+article {
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+.feature-article {
+  grid-column: span 2;
+  background: #ececec;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.top-article {
+  grid-column: span 1;
+  background: #f4f4f4;
+  font-weight: bold;
+}
+
+.grid-article {
+  font-size: 1rem;
+}
+
+@font-face {
+  font-family: 'Ancient Medium';
+  src: url('fonts/Ancient\ Medium.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
