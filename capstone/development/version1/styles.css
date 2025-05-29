@@ -12,6 +12,15 @@ body {
   margin: auto;
 }
 
+/* PAST newspaper texture */
+/* body{
+  background: url('images/paper-texture.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  color: #111;
+} */
+
 header {
   text-align: center;
   border-bottom: 5px double black;
@@ -19,15 +28,17 @@ header {
   margin-bottom: 1em;
 }
 
+a {
+  all: unset; 
+  cursor: pointer; 
+}
+
+
 #topSection {
   display: flex;
   gap: 1100px;
   width: 100%;
   margin-bottom: -15px;
-}
-
-#search {
- 
 }
 
 #logIn{
@@ -42,7 +53,7 @@ header {
 }
 
 /* navigation styling */
-.main-nav ul {
+#main-nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -52,7 +63,7 @@ header {
   flex: 2;
 }
 
-.main-nav a {
+#main-nav a {
   text-decoration: none;
   color: #111;
   font-size: 0.70em;
@@ -62,7 +73,7 @@ header {
   font-family: 'Arial', sans-serif;
 }
 
-.main-nav a:hover {
+#main-nav a:hover {
   text-decoration: underline;
 }
 
@@ -85,6 +96,25 @@ align-items: flex-end;
 #timePeriod {
   flex: 1;
   max-height: 20px;
+  
+  text-decoration: none;
+  color: #111;
+  font-size: 0.70em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Arial', sans-serif;
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+#timePeriod:focus{
+  outline: none;
+}
+
+#timePeriod option{
+
 }
 
 #years {
@@ -95,7 +125,7 @@ align-items: flex-end;
 
 .site-title {
   font-family: 'Ancient Medium', 'serif';
-  font-size: 2.5em;
+  font-size: 3em;
   margin-top: 0px;
   margin-bottom: 0.5em;
   letter-spacing: 0.5px;
@@ -109,7 +139,7 @@ align-items: flex-end;
   max-height: 20px;
 }
 
-.main-nav1 ul {
+#main-nav1 ul {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -117,7 +147,7 @@ align-items: flex-end;
   margin-top: 0;
 }
 
-.main-nav1 a {
+#main-nav1 a {
   text-decoration: none;
   color: #111;
   font-size: .90em;
@@ -126,40 +156,106 @@ align-items: flex-end;
   font-family: 'Arial', sans-serif;
 }
 
-.main-nav1 a:hover {
+#main-nav1 a:hover {
   text-decoration: underline;
 }
 
 
 .article-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
+/* Top feature section layout */
+.feature-area {
+  display: grid;
+  grid-template-columns: 2fr auto 1fr;
+  gap: 16px;
+  align-items: start;
+  /* max-height: 600px; */
+}
+
+/* Vertical line */
+#line-side {
+  height: 100%;
+  height: 900px;
+}
+
+/* article blocks */
 article {
-  background: white;
-  padding: 1rem;
-  border: 1px solid #ccc;
+  background: none;
+  padding: 16px 0;
+  border: none;
 }
 
+.top-article:first-of-type{
+  border-top: none;
+}
+
+/* Feature story style */
 .feature-article {
-  grid-column: span 2;
-  background: #ececec;
-  font-size: 1.4rem;
-  font-weight: bold;
+  border-top: none;
+  display: flex;
+  gap: 50px;
 }
 
-.top-article {
-  grid-column: span 1;
-  background: #f4f4f4;
-  font-weight: bold;
+.feature-article h1 {
+  font-size: 1.25em;
+  font-weight: 600;
+  line-height: 1.2em;
+  font-family:  Georgia, 'Times New Roman', Times, serif;
+}
+
+.feature-article p{
+  color: #707070;
+  font-size: 1em;
+  font-family:  Georgia, 'Times New Roman', Times, serif;
+}
+
+#feature1{
+  border-top: 1px solid #ccc;
+  margin-top: -515px;
+}
+
+.article-text{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Side column */
+.side-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.side-column h1{
+  font-size: 1.25em;
+  font-weight: 600;
+  line-height: 1.2em;
+  font-family:  Georgia, 'Times New Roman', Times, serif;
+  margin-top: 10px;
+}
+
+.side-column p{
+  color: #707070;
+  font-size: 1em;
+  font-family:  Georgia, 'Times New Roman', Times, serif;
+}
+
+.standard-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  border-top: 1px solid #ccc;
+
 }
 
 .grid-article {
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 @font-face {
@@ -167,4 +263,45 @@ article {
   src: url('fonts/Ancient\ Medium.ttf') format('opentype');
   font-weight: normal;
   font-style: normal;
+}
+
+/* PAST STYLING */
+
+
+.newspaper-section {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 48px;
+  padding: 16px 0;
+  border-top: 1px solid #ccc;
+}
+
+.section-two {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1.5fr; /* make 5th column wider */
+}
+
+.col {
+  font-family: Georgia, serif;
+  font-size: 0.95em;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* Optional: Style for the "photo" column */
+.photo-col {
+  background-color: #eee;
+  padding: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* PAST STYLING */
+
+.hidden{
+  display: none;
+}
+
+.showing{
+  display: block;
 }

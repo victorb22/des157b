@@ -12,10 +12,10 @@
   <!-- libraries -->
 
   <!-- Add link to any google fonts used here -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Poppins:wght@500;600;700&display=swap"
-    rel="stylesheet">
+    rel="stylesheet"> -->
 
   <!-- My Styles -->
   <link href="styles.css" rel="stylesheet">
@@ -29,17 +29,12 @@
 
 <body>
   <div id="topSection">
-
-    <img id="search" src="images/search.svg" alt="search" width="15px" height="15px">
-    <button id="logIn">LOG IN</button>
+    <img id="search" class="hidden" src="images/search.svg" alt="search" width="15px" height="15px">
+    <button id="logIn" class="hidden">LOG IN</button>
   </div>
 
   <header>
-    <!-- <div id="topSection">
-
-      <img id="search" src="images/search.svg" alt="search" width="15px" height="15px"> -->
-
-      <nav class="main-nav">
+      <nav id="main-nav" class="hidden">
         <ul>
           <li><a href="#">U.S.</a></li>
           <li><a href="#">International</a></li>
@@ -53,9 +48,9 @@
     <div id="midSection">
       <div id="fixL">
         <select id="timePeriod">
-          <option value="present">Present</option>
-          <option value="past">Past</option>
-          <option value="future">Future</option>
+          <option value="present">PRESENT</option>
+          <option value="past">PAST</option>
+          <option value="future">FUTURE</option>
         </select>
 
         <select id="years">
@@ -77,7 +72,7 @@
     </div>
 
 
-    <nav class="main-nav1">
+    <nav id="main-nav1" class="hidden">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">World</a></li>
@@ -89,20 +84,82 @@
 
   </header>
 
-  <main class="article-grid">
-    <article class="feature-article">
-      <h1>Hello Title</h1>
-      <p>text in here g</p>
-    </article>
-    <article class="top-article">Top News 1</article>
-    <article class="top-article">Top News 2</article>
-    <article class="grid-article">Story A</article>
-    <article class="grid-article">Story B</article>
-    <article class="grid-article">Story C</article>
-    <article class="grid-article">Story D</article>
-    <article class="grid-article">Story E</article>
-  </main>
+  <!-- PRESENT -->
+  <section id="presentPage" class="hidden">
+  <section class="article-grid">
+    <!-- Feature + Side Column -->
+    <div class="feature-area">
+      <article class="feature-article">
+        <div class="article-text">
+        <a href="https://www.independent.co.uk/tech/renewable-energy-solar-nepal-bhutan-iceland-b2533699.html"><h1>7 countries now generate 100% of their electricity from renewables</h1></a> 
+        <p>Albania, Bhutan, Nepal, Paraguay, Iceland, Ethiopia and the Dem. Rp. of Congo produced more than 99.7 per cent of their electricity using geothermal, hydro, solar or wind power.</p>
+       </div>
+        <img src="images/feature-article-present.png" alt="bookmarked pg" width="500px">
+      </article>
+
+      <img id="line-side" src="images/line-side.svg" alt="line divider">
+
+      <div class="side-column">
+        <article class="top-article">
+          <img src="images/feature-article-present.png" alt="bookmarked pg" width="375px">
+          <h1>Top News Headline</h1>
+          <p>Albania, Bhutan, Nepal, Paraguay, Iceland, Ethiopia and the Dem. Rp. of Congo produced more than 99.7 per cent of their electricity using geothermal, hydro, solar or wind power.</p>
+        </article>
+        <article class="top-article">
+          <img src="images/feature-article-present.png" alt="bookmarked pg" width="375px">
+          <h1>Top News Headline</h1>
+          <p>Albania, Bhutan, Nepal, Paraguay, Iceland, Ethiopia and the Dem. Rp. of Congo produced more than 99.7 per cent of their electricity using geothermal, hydro, solar or wind power.</p>
+        </article>
+      </div>
+
+      <article id="feature1" class="feature-article">
+        <div class="article-text">
+        <a href="https://www.independent.co.uk/tech/renewable-energy-solar-nepal-bhutan-iceland-b2533699.html"><h1>7 countries now generate 100% of their electricity from renewables</h1></a> 
+        <p>Albania, Bhutan, Nepal, Paraguay, Iceland, Ethiopia and the Dem. Rp. of Congo produced more than 99.7 per cent of their electricity using geothermal, hydro, solar or wind power.</p>
+       </div>
+        <img src="images/feature-article-present.png" alt="bookmarked pg" width="500px">
+      </article>
+    </div>
   
+    <!-- Articles Grid -->
+    <div class="standard-grid">
+      <article class="grid-article">Story A</article>
+      <article class="grid-article">Story B</article>
+      <article class="grid-article">Story C</article>
+      <article class="grid-article">Story D</article>
+      <article class="grid-article">Story E</article>
+    </div>
+  </section>
+</section>
+  <!-- PRESENT  -->
+
+  <!-- PAST -->
+<section id="pastPage" class="showing">
+  <div class="newspaper-section section-one">
+    <div class="col">Article A1</div>
+    <div class="col photo-col">Photo or article B1</div>
+    <div class="col">Article C1</div>
+    <div class="col">Article D1</div>
+    <div class="col">Article E1</div>
+  </div>
+  
+  <div class="newspaper-section section-two">
+    <div class="col">Article A2</div>
+    <div class="col">Article B2</div>
+    <div class="col">Article C2</div>
+    <div class="col">Article D2</div>
+    <div class="col photo-col">Photo or article E2</div>
+  </div>
+
+</section>
+<!--  PAST  -->
+
+  <!-- FUTURE -->
+  <section id="futurePage" class="hidden">
+        
+  </section>
+  <!-- FUTURE -->
+
 </body>
 
 </html>
