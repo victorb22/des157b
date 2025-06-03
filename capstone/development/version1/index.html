@@ -10,12 +10,9 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
   <!-- libraries -->
-
-  <!-- Add link to any google fonts used here -->
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Poppins:wght@500;600;700&display=swap"
-    rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
   <!-- My Styles -->
   <link href="styles.css" rel="stylesheet">
@@ -23,18 +20,30 @@
   <!-- Meta tag for mobile support -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- ticker -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/aamirafridi/jQuery.Marquee/jquery.marquee.min.js"></script>
+  
+
+  <!-- vanta.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+  
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
   <!-- My Script -->
   <script src="script.js" defer></script>
 </head>
 
 <body>
   <div id="topSection">
-    <img id="search" class="hidden" src="images/search.svg" alt="search" width="15px" height="15px">
-    <button id="logIn" class="hidden">LOG IN</button>
+    <img id="search" class="showing" src="images/search.svg" alt="search" width="15px" height="15px">
+    <button id="logIn" class="showing">LOG IN</button>
   </div>
 
   <header>
-      <nav id="main-nav" class="hidden">
+      <nav id="main-nav" class="showing">
         <ul>
           <li><a href="#">U.S.</a></li>
           <li><a href="#">International</a></li>
@@ -44,7 +53,6 @@
         </ul>
       </nav>
 
-
     <div id="midSection">
       <div id="fixL">
         <select id="timePeriod">
@@ -52,27 +60,24 @@
           <option value="past">PAST</option>
           <option value="future">FUTURE</option>
         </select>
-
-        <select id="years">
-          <option value="select">Select Years</option>
-          <option value="1900-1930">1900—1930</option>
-          <option value="1930-1960">1930—1960</option>
-          <option value="1960-1990">1960—1990</option>
-          <option value="1990-2020">1990—2020</option>
-        </select>
+        <p>hello</p>
       </div>
 
-      <h1 class="site-title">The New Foresight Times</h1>
+      <h1 id="site-title">The New Foresight Times</h1>
 
-      <select id="typeFilter">
-        <option value="select">Show</option>
-        <option value="positive">Positive</option>
-        <option value="negative">Negative</option>
+      <select id="categoryFilter">
+        <option value="select">Category</option>
+        <option value="Social - Positive">Social - Positive</option>
+        <option value="Social - Negative">Social - Negative</option>
+        <option value="Politics - Positive">Business - Positive</option>
+        <option value="Politics - Negative">Business - Negative</option>
+        <option value="World - Positive">International - Positive</option>
+        <option value="World - Negative">International - Negative</option>        
       </select>
     </div>
 
 
-    <nav id="main-nav1" class="hidden">
+    <nav id="main-nav1" class="showing">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">World</a></li>
@@ -82,16 +87,25 @@
       </ul>
     </nav>
 
+    <div id="news-ticker" class="hidden">
+      <div class="marquee">
+        🌐 Future News: Will Go Here • Climate news will be here • Social News Here!
+      </div>
+    </div>
+    
+
+
   </header>
 
   <!-- PRESENT -->
-  <section id="presentPage" class="hidden">
+  <section id="presentPositiveSocial" class="hidden">
+   
   <section class="article-grid">
     <!-- Feature + Side Column -->
     <div class="feature-area">
       <article class="feature-article">
         <div class="article-text">
-        <a href="https://www.independent.co.uk/tech/renewable-energy-solar-nepal-bhutan-iceland-b2533699.html"><h1>7 countries now generate 100% of their electricity from renewables</h1></a> 
+        <a href="https://www.independent.co.uk/tech/renewable-energy-solar-nepal-bhutan-iceland-b2533699.html"><h1>PRESENT POSITIVE TECH</h1></a> 
         <p>Albania, Bhutan, Nepal, Paraguay, Iceland, Ethiopia and the Dem. Rp. of Congo produced more than 99.7 per cent of their electricity using geothermal, hydro, solar or wind power.</p>
        </div>
         <img src="images/feature-article-present.png" alt="bookmarked pg" width="500px">
@@ -119,45 +133,290 @@
        </div>
         <img src="images/feature-article-present.png" alt="bookmarked pg" width="500px">
       </article>
-    </div>
-  
+  </section>
+    
     <!-- Articles Grid -->
-    <div class="standard-grid">
+    <div class="presentGrid">
       <article class="grid-article">Story A</article>
       <article class="grid-article">Story B</article>
       <article class="grid-article">Story C</article>
       <article class="grid-article">Story D</article>
       <article class="grid-article">Story E</article>
     </div>
+</section>
+
+<section id="presentNegativeSocial" class="hidden">
+  <section class="article-grid">
+    <!-- Feature + Side Column -->
+    <div class="feature-area">
+      <article class="feature-article">
+        <div class="article-text">
+        <a href="https://www.independent.co.uk/tech/renewable-energy-solar-nepal-bhutan-iceland-b2533699.html"><h1>PRESENT NEGATIVE TECH</h1></a> 
+        <p>Albania, Bhutan, Nepal, Paraguay, Iceland, Ethiopia and the Dem. Rp. of Congo produced more than 99.7 per cent of their electricity using geothermal, hydro, solar or wind power.</p>
+       </div>
+        <img src="images/feature-article-present.png" alt="bookmarked pg" width="500px">
+      </article>
+
+      <img id="line-side" src="images/line-side.svg" alt="line divider">
+
+      <div class="side-column">
+        <article class="top-article">
+          <img src="images/feature-article-present.png" alt="bookmarked pg" width="375px">
+          <h1>Top News Headline</h1>
+          <p>Albania, Bhutan, Nepal, Paraguay, Iceland, Ethiopia and the Dem. Rp. of Congo produced more than 99.7 per cent of their electricity using geothermal, hydro, solar or wind power.</p>
+        </article>
+        <article class="top-article">
+          <img src="images/feature-article-present.png" alt="bookmarked pg" width="375px">
+          <h1>Top News Headline</h1>
+          <p>Albania, Bhutan, Nepal, Paraguay, Iceland, Ethiopia and the Dem. Rp. of Congo produced more than 99.7 per cent of their electricity using geothermal, hydro, solar or wind power.</p>
+        </article>
+      </div>
+
+      <article id="feature1" class="feature-article">
+        <div class="article-text">
+        <a href="https://www.independent.co.uk/tech/renewable-energy-solar-nepal-bhutan-iceland-b2533699.html"><h1>7 countries now generate 100% of their electricity from renewables</h1></a> 
+        <p>Albania, Bhutan, Nepal, Paraguay, Iceland, Ethiopia and the Dem. Rp. of Congo produced more than 99.7 per cent of their electricity using geothermal, hydro, solar or wind power.</p>
+       </div>
+        <img src="images/feature-article-present.png" alt="bookmarked pg" width="500px">
+      </article>
+
   </section>
+      <!-- Articles Grid -->
+      <div class="presentGrid">
+        <article class="grid-article">Story A</article>
+        <article class="grid-article">Story B</article>
+        <article class="grid-article">Story C</article>
+        <article class="grid-article">Story D</article>
+        <article class="grid-article">Story E</article>
+      </div>
 </section>
   <!-- PRESENT  -->
 
   <!-- PAST -->
-<section id="pastPage" class="showing">
-  <div class="newspaper-section section-one">
-    <div class="col">Article A1</div>
-    <div class="col photo-col">Photo or article B1</div>
-    <div class="col">Article C1</div>
-    <div class="col">Article D1</div>
-    <div class="col">Article E1</div>
+<section id="pastPage" class="hidden">
+
+  <div class="past-section">
+    <div class="col">
+      <h3>Supreme Court Ends School Segregation</h3>
+      <time datetime="1954-05-17" class="news-date">May 17, 1954</time>
+      <p>Brown v. Board of Education declares 'Separate But Equal' unconstitutional in a landmark decision as the U.S. Supreme Court unanimously rules that racial segregation in public schools violates the 14th Amendment, overturning the "separate but equal" doctrine.</p>
+      <span class="signifi"><strong>📌</strong> Set legal precedent that segregation was unequal and laid groundwork for future desegregating in the U.S.</span>
+    <div>
+      <h3>Federal Law Eliminates Barriers to Black Voter Registration</h3>
+      <time datetime="1965-08-06" class="news-date">August 6, 1965</time>
+      <p>The Voting Rights Act was signed, banning racial discrimination in voting and implementing federal oversight in areas with histories of suppression.</p>
+      <span class="signifi"><strong>📌</strong> Helped enforce the 15th Amendment and increase voter participation among African Americans, especially in the South.</span>
+    </div>
   </div>
-  
-  <div class="newspaper-section section-two">
+
+    <div class="col photo">
+      <img src="images/pastpic.png" alt="1954: Supreme Court Ends School Segregation">
+      <h3>Legislation Prohibits Discrimination in Public Spaces and Employment</h3>
+      <time datetime="1964-02-07" class="news-date">July 2, 1964</time>
+      <p>President Lyndon B. Johnson signed the Civil Rights Act, outlawing segregation in public places and banning employment discrimination based on race, color, religion, sex, or national origin.</p>
+      <span class="signifi"><strong>📌</strong> Provided federal enforcement mechanisms to minorities and paved the way for the Voting Act of 1965 and Fair housing Act of 1968.</span>
+    </div>
+
+    <div class="col2">
+      <div>
+        <div class="col2text">
+        <h2>Black Lives Matter Movement Begins</h2>
+        <time datetime="2013" class="news-date">2013</time>
+        </div>
+        <h3>Hashtag Sparks Global Movement Against Racial Injustice</h3>
+        <p>After George Zimmerman was found not guilty in the shooting death of Trayvon Martin, the #BlackLivesMatter hashtag was created, evolving into a global movement advocating against racism and violence toward Black individuals.</p>
+        <span class="signifi"><strong>📌</strong> Lead to significant changes in workplace policies, increased support for survivors, and more conversations about sexual misconduct.</span>
+      </div>
+      <div>
+        <div class="col2text">
+        <h2>#MeToo Movement Gains Momentum</h2>
+        <time datetime="2017" class="news-date">2017</time>
+        </div>
+        <h3>Social Media Campaign Highlights Pervasive Sexual Harassment</h3>
+        <p>The hashtage surged in 2017 as personal experiences of sexual harassment and assault were shared worldwide, leading to increased awareness and solidarity.</p>
+        <span class="signifi"><strong>📌</strong> Brought international attention to issues of police brutality and systemic racism, prompting protests demanding justice and reform.</span>
+      </div>
+    </div>
+
+    <div class="col3">
+      <div>
+      <h3><em>Landmark Legislation Ensures Rights for Individuals with Disabilities</em></h3>
+      <time datetime="1990-26-07" class="news-date">July 26, 1990</time>
+      <p>Americans with Disabilities Act was signed, prohibiting discrimination against people with disabilities in employment, public accommodations, transportation, and telecommunications.</p>
+      <span class="signifi"><strong>📌</strong> Helped provide equal opportunities and accesibility for disabled individuals. It also created more awareness and inlusivity within different sectors of society.</span>
+      </div>
+      <div>
+        <img src="images/pastpic1.png" alt="Obergefell v. Hodges Grants Marriage Equality Across All States">
+        <h3><em>Obergefell v. Hodges Grants Marriage Equality Across All States</em></h3>
+        <time datetime="2015-26-06" class="news-date">June 26, 2015</time>
+        <p>The Supreme Court ruled that states cannot constitutionally keep same-sex couples from marrying and must recognize their unions.</p>
+        <span class="signifi"><strong>📌</strong> This was a culminating point after decades of activism and furthemore established equality under the law.</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- <div class="past-section section-two">
     <div class="col">Article A2</div>
     <div class="col">Article B2</div>
     <div class="col">Article C2</div>
     <div class="col">Article D2</div>
     <div class="col photo-col">Photo or article E2</div>
+  </div> -->
+</section>
+
+<section id="pastPage1" class="hidden">
+  
+  <div class="past-section">
+    <div class="col">
+      <h3>Supreme Court Ends School Segregation</h3>
+      <time datetime="1954-05-17" class="news-date">May 17, 1954</time>
+      <p>Brown v. Board of Education declares 'Separate But Equal' unconstitutional in a landmark decision as the U.S. Supreme Court unanimously rules that racial segregation in public schools violates the 14th Amendment, overturning the "separate but equal" doctrine.</p>
+      <span class="signifi"><strong>📌</strong> Set legal precedent that segregation was unequal and laid groundwork for future desegregating in the U.S.</span>
+    <div>
+      <h3>Federal Law Eliminates Barriers to Black Voter Registration</h3>
+      <time datetime="1965-08-06" class="news-date">August 6, 1965</time>
+      <p>The Voting Rights Act was signed, banning racial discrimination in voting and implementing federal oversight in areas with histories of suppression.</p>
+      <span class="signifi"><strong>📌</strong> Helped enforce the 15th Amendment and increase voter participation among African Americans, especially in the South.</span>
+    </div>
   </div>
 
+    <div class="col photo">
+      <img src="images/pastpic.png" alt="1954: Supreme Court Ends School Segregation">
+      <h3>Legislation Prohibits Discrimination in Public Spaces and Employment</h3>
+      <time datetime="1964-02-07" class="news-date">July 2, 1964</time>
+      <p>President Lyndon B. Johnson signed the Civil Rights Act, outlawing segregation in public places and banning employment discrimination based on race, color, religion, sex, or national origin.</p>
+      <span class="signifi"><strong>📌</strong> Provided federal enforcement mechanisms to minorities and paved the way for the Voting Act of 1965 and Fair housing Act of 1968.</span>
+    </div>
+
+    <div class="col2">
+      <div>
+        <div class="col2text">
+        <h2>Black Lives Matter Movement Begins</h2>
+        <time datetime="2013" class="news-date">2013</time>
+        </div>
+        <h3>Hashtag Sparks Global Movement Against Racial Injustice</h3>
+        <p>After George Zimmerman was found not guilty in the shooting death of Trayvon Martin, the #BlackLivesMatter hashtag was created, evolving into a global movement advocating against racism and violence toward Black individuals.</p>
+        <span class="signifi"><strong>📌</strong> Lead to significant changes in workplace policies, increased support for survivors, and more conversations about sexual misconduct.</span>
+      </div>
+      <div>
+        <div class="col2text">
+        <h2>#MeToo Movement Gains Momentum</h2>
+        <time datetime="2017" class="news-date">2017</time>
+        </div>
+        <h3>Social Media Campaign Highlights Pervasive Sexual Harassment</h3>
+        <p>The hashtage surged in 2017 as personal experiences of sexual harassment and assault were shared worldwide, leading to increased awareness and solidarity.</p>
+        <span class="signifi"><strong>📌</strong> Brought international attention to issues of police brutality and systemic racism, prompting protests demanding justice and reform.</span>
+      </div>
+    </div>
+
+    <div class="col3">
+      <div>
+      <h3><em>Landmark Legislation Ensures Rights for Individuals with Disabilities</em></h3>
+      <time datetime="1990-26-07" class="news-date">July 26, 1990</time>
+      <p>Americans with Disabilities Act was signed, prohibiting discrimination against people with disabilities in employment, public accommodations, transportation, and telecommunications.</p>
+      <span class="signifi"><strong>📌</strong> Helped provide equal opportunities and accesibility for disabled individuals. It also created more awareness and inlusivity within different sectors of society.</span>
+      </div>
+      <div>
+        <img src="images/pastpic1.png" alt="Obergefell v. Hodges Grants Marriage Equality Across All States">
+        <h3><em>Obergefell v. Hodges Grants Marriage Equality Across All States</em></h3>
+        <time datetime="2015-26-06" class="news-date">June 26, 2015</time>
+        <p>The Supreme Court ruled that states cannot constitutionally keep same-sex couples from marrying and must recognize their unions.</p>
+        <span class="signifi"><strong>📌</strong> This was a culminating point after decades of activism and furthemore established equality under the law.</span>
+      </div>
+    </div>
+
+  </div>
 </section>
 <!--  PAST  -->
 
   <!-- FUTURE -->
-  <section id="futurePage" class="hidden">
-        
-  </section>
+  <!-- <section id="futurePage" class="hidden"> -->
+    <section id="futurePage" class="hidden" style="position: relative; min-height: 100vh;">
+
+      <!-- Vanta Background -->
+      <div id="vanta-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;"></div>
+    
+      <!-- Article Content Layer -->
+      <div id="futureContent" style="position: relative; z-index: 1; padding: 1em; color: white;">
+        <section class="article-grid">
+          <!-- Feature + Side Column -->
+          <div class="feature-area">
+            <article class="future-article">
+              <div class="article-text">
+                <a href="https://www.independent.co.uk/tech/renewable-energy-solar-nepal-bhutan-iceland-b2533699.html">
+                  <h1>FUTURE SOCIAL NEWS</h1>
+                </a>
+                <p>Albania, Bhutan, Nepal, Paraguay, Iceland, Ethiopia and the Dem. Rp. of Congo produced more than 99.7 per cent of their electricity using geothermal, hydro, solar or wind power.</p>
+              </div>
+              <img src="images/feature-article-present.png" alt="bookmarked pg" width="450px">
+            </article>
+    
+            <img id="line-side" src="images/line-side.svg" alt="line divider">
+    
+            <div class="sidefuture-column">
+              <article class="topfuture-article">
+                <img src="images/feature-article-present.png" alt="bookmarked pg" width="315px">
+                <h1>Top News Headline</h1>
+                <p>Albania, Bhutan, Nepal, Paraguay, Iceland, Ethiopia and the Dem. Rp. of Congo produced more than 99.7 per cent of their electricity using geothermal, hydro, solar or wind power.</p>
+              </article>
+              <article class="topfuture-article">
+                <img src="images/feature-article-present.png" alt="bookmarked pg" width="315px">
+                <h1>Top News Headline</h1>
+                <p>Albania, Bhutan, Nepal, Paraguay, Iceland, Ethiopia and the Dem. Rp. of Congo produced more than 99.7 per cent of their electricity using geothermal, hydro, solar or wind power.</p>
+              </article>
+            </div>
+    
+            <article id="future1" class="future-article">
+              <div class="article-text">
+                <a href="https://www.independent.co.uk/tech/renewable-energy-solar-nepal-bhutan-iceland-b2533699.html">
+                  <h1>7 countries now generate 100% of their electricity from renewables</h1>
+                </a>
+                <p>Albania, Bhutan, Nepal, Paraguay, Iceland, Ethiopia and the Dem. Rp. of Congo produced more than 99.7 per cent of their electricity using geothermal, hydro, solar or wind power.</p>
+              </div>
+              <img src="images/feature-article-present.png" alt="bookmarked pg" width="450px">
+            </article>
+          </div>
+        </section>
+      </div>
+    
+    </section>
+    
+<!--    
+  <section class="article-grid">
+    <div class="feature-area">
+      <article class="feature-article">
+        <div class="article-text">
+        <a href="https://www.independent.co.uk/tech/renewable-energy-solar-nepal-bhutan-iceland-b2533699.html"><h1>PRESENT POSITIVE TECH</h1></a> 
+        <p>Albania, Bhutan, Nepal, Paraguay, Iceland, Ethiopia and the Dem. Rp. of Congo produced more than 99.7 per cent of their electricity using geothermal, hydro, solar or wind power.</p>
+       </div>
+        <img src="images/feature-article-present.png" alt="bookmarked pg" width="500px">
+      </article>
+
+      <img id="line-side" src="images/line-side.svg" alt="line divider">
+
+      <div class="side-column">
+        <article class="top-article">
+          <img src="images/feature-article-present.png" alt="bookmarked pg" width="375px">
+          <h1>Top News Headline</h1>
+          <p>Albania, Bhutan, Nepal, Paraguay, Iceland, Ethiopia and the Dem. Rp. of Congo produced more than 99.7 per cent of their electricity using geothermal, hydro, solar or wind power.</p>
+        </article>
+        <article class="top-article">
+          <img src="images/feature-article-present.png" alt="bookmarked pg" width="375px">
+          <h1>Top News Headline</h1>
+          <p>Albania, Bhutan, Nepal, Paraguay, Iceland, Ethiopia and the Dem. Rp. of Congo produced more than 99.7 per cent of their electricity using geothermal, hydro, solar or wind power.</p>
+        </article>
+      </div>
+
+      <article id="feature1" class="feature-article">
+        <div class="article-text">
+        <a href="https://www.independent.co.uk/tech/renewable-energy-solar-nepal-bhutan-iceland-b2533699.html"><h1>7 countries now generate 100% of their electricity from renewables</h1></a> 
+        <p>Albania, Bhutan, Nepal, Paraguay, Iceland, Ethiopia and the Dem. Rp. of Congo produced more than 99.7 per cent of their electricity using geothermal, hydro, solar or wind power.</p>
+       </div>
+        <img src="images/feature-article-present.png" alt="bookmarked pg" width="500px">
+      </article>
+  </section> -->
+  <!-- </section> -->
   <!-- FUTURE -->
 
 </body>
