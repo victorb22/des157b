@@ -26,20 +26,43 @@ a {
 }
 
 #overlay{
-  background-color: #567B94;
+  background-color: #7fbce7;
   border-radius: 10px;
-  padding: 30px;
-  border: 2px solid black;
+  padding: 10px 40px 10px 40px;
+  border: 2px solid #5b8db1;
+  width: 550px;
+  font-family: 'Arial', 'sans-serif';
 }
 
 #overlay h1{
-  font-size: 1.2em;
-  color: black;
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
 }
 
 #overlay p{
+  font-size: 1.2em;
+  color: black;
+  line-height: 1.5em;
+}
+
+#overlay li{
   font-size: 1em;
   color: black;
+  line-height: 1.5em;
+}
+
+#close{
+  background-color: #6a8fa9;
+  margin-left: 470px;
+  border: none;
+  font-weight: 900;
+  font-size: 1.5em;
+  color: white;
 }
 
 #topSection {

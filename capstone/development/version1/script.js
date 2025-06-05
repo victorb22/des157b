@@ -8,6 +8,9 @@
   const timePeriodSelect = document.querySelector('#timePeriod');
   const filterSelect = document.querySelector('#categoryFilter');
 
+  const instructions = document.querySelector('#instruct');
+  const close = document.querySelector('#close');
+
   const presentPositiveSocial = document.querySelector('#presentPositiveSocial');
   const presentNegativeSocial = document.querySelector('#presentNegativeSocial');
 
@@ -19,13 +22,16 @@
 
   const searchIcon = document.querySelector('#search');
   const logInButton = document.querySelector('#logIn');
-  const instructions = document.querySelector('#instruct');
 
   const topNav = document.querySelector('#main-nav');
   const bottomNav = document.querySelector('#main-nav1');
 
   instructions.addEventListener('click', function(){
     overlay.className = 'showing';
+  });
+
+  close.addEventListener('click', function(){
+    overlay.className = 'hidden';
   });
 
   // When filter changes
