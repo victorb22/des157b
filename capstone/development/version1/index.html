@@ -39,7 +39,10 @@
 <body>
   <div id="topSection">
     <img id="search" class="showing" src="images/search.svg" alt="search" width="15px" height="15px">
-    <button id="logIn" class="showing">LOG IN</button>
+    <div id="buttonsSection">
+      <button id="instruct" class="showing">INSTRUCTIONS</button>
+      <button id="logIn" class="showing">LOG IN</button>
+    </div>
   </div>
 
   <header>
@@ -60,7 +63,7 @@
           <option value="past">PAST</option>
           <option value="future">FUTURE</option>
         </select>
-        <p>hello</p>
+        <!-- <p>hello</p> -->
       </div>
 
       <h1 id="site-title">The New Foresight Times</h1>
@@ -71,8 +74,8 @@
         <option value="Social - Negative">Social - Negative</option>
         <option value="Politics - Positive">Business - Positive</option>
         <option value="Politics - Negative">Business - Negative</option>
-        <option value="World - Positive">International - Positive</option>
-        <option value="World - Negative">International - Negative</option>        
+        <option value="World - Positive">World - Positive</option>
+        <option value="World - Negative">World - Negative</option>        
       </select>
     </div>
 
@@ -81,9 +84,10 @@
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">World</a></li>
-        <li><a href="#">U.S.</a></li>
-        <li><a href="#">Canada</a></li>
-        <li><a href="#">International</a></li>
+        <li><a href="#">Social Issues</a></li>
+        <li><a href="#">Health</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Technology</a></li>
       </ul>
     </nav>
 
@@ -92,10 +96,19 @@
         🌐 Future News: Will Go Here • Climate news will be here • Social News Here!
       </div>
     </div>
-    
-
-
   </header>
+
+  <div id="overlay" class="hidden">
+    <button id="close">X</button>
+    <h1>Instructions</h1>
+    <p>Follow the steps below to learn how to navigate and use the site.</p>
+    <ul>
+      <li>Select a time period from the dropdown selection, either past, present, or future.</li>
+      <li>Next, select a category from the category dropdown</li>
+      <li>That's it! Now you can explore current news, learn from the past, or look at potential futures.</li>
+    </ul>
+  </div>
+
 
   <!-- PRESENT -->
   <section id="presentPositiveSocial" class="hidden">
@@ -105,33 +118,41 @@
     <div class="feature-area">
       <article class="feature-article">
         <div class="article-text">
-        <a href="https://www.independent.co.uk/tech/renewable-energy-solar-nepal-bhutan-iceland-b2533699.html"><h1>PRESENT POSITIVE TECH</h1></a> 
-        <p>Albania, Bhutan, Nepal, Paraguay, Iceland, Ethiopia and the Dem. Rp. of Congo produced more than 99.7 per cent of their electricity using geothermal, hydro, solar or wind power.</p>
+        <a href="https://apnews.com/article/minnesota-felon-voting-rights-court-walz-a7ffb49e394a39cf1425b56faa63f13b"><h1>Minnesota Supreme Court Upholds Voting Rights for Formerly Incarcerated Citizens</h1></a> 
+        <p>The Minnesota Supreme Court ruled that requiring formerly incarcerated individuals to pay all fines and fees before restoring their right to vote is unconstitutional.</p>
+        <span class="read">3 MIN READ</span>
        </div>
-        <img src="images/feature-article-present.png" alt="bookmarked pg" width="500px">
+       <div class=".img-container">
+        <img src="images/pres-soc-pos-minn.png" alt="bookmarked pg" width="500px">
+        </div>
       </article>
 
       <img id="line-side" src="images/line-side.svg" alt="line divider">
 
       <div class="side-column">
         <article class="top-article">
-          <img src="images/feature-article-present.png" alt="bookmarked pg" width="375px">
-          <h1>Top News Headline</h1>
-          <p>Albania, Bhutan, Nepal, Paraguay, Iceland, Ethiopia and the Dem. Rp. of Congo produced more than 99.7 per cent of their electricity using geothermal, hydro, solar or wind power.</p>
+          <img src="images/presentsoc-pos.png" alt="bookmarked pg" width="375px">
+          <h1><a href="https://www.fbi.gov/news/press-releases/fbi-releases-2024-quarterly-crime-report-and-use-of-force-data-update">REPORT: Violent Crime Down in the USA, Murder Rate Plunging</h1></a>
+          <p>Latest FBI stats contradict popular perception and political statements to the contrary.</p>
+          <span class="read">5 MIN READ</span>
         </article>
         <article class="top-article">
-          <img src="images/feature-article-present.png" alt="bookmarked pg" width="375px">
-          <h1>Top News Headline</h1>
-          <p>Albania, Bhutan, Nepal, Paraguay, Iceland, Ethiopia and the Dem. Rp. of Congo produced more than 99.7 per cent of their electricity using geothermal, hydro, solar or wind power.</p>
+          <img src="images/presentsoc-posside.png" alt="bookmarked pg" width="375px">
+          <h1><a href="https://theminaretonline.org/2025/01/26/as-gen-z-shows-up-at-the-polls-young-voters-are-changing-the-political-game/?utm_">Record High in Youth Voter Turnout</h1></a>
+          <p>Youth participation in local and national elections reached its highest level in U.S. history, with college campuses and digital organizing driving new turnout.</p>
+          <span class="read">4 MIN READ</span>
         </article>
       </div>
 
       <article id="feature1" class="feature-article">
         <div class="article-text">
-        <a href="https://www.independent.co.uk/tech/renewable-energy-solar-nepal-bhutan-iceland-b2533699.html"><h1>7 countries now generate 100% of their electricity from renewables</h1></a> 
-        <p>Albania, Bhutan, Nepal, Paraguay, Iceland, Ethiopia and the Dem. Rp. of Congo produced more than 99.7 per cent of their electricity using geothermal, hydro, solar or wind power.</p>
+        <a href="https://atlantadailyworld.com/2025/04/02/land-reparations-are-possible-%E2%88%92-and-over-225-us-communities-are-already-working-to-make-amends-for-slavery-and-colonization/?utm_"><h1>Reparations Program Pilots Expand in U.S. Cities</h1></a> 
+        <p>Multiple U.S. cities have begun offering housing, healthcare, or direct payments to Black residents as part of pilot reparations initiatives addressing the legacy of slavery and systemic racism.</p>
+        <span class="read">5 MIN READ</span>
        </div>
-        <img src="images/feature-article-present.png" alt="bookmarked pg" width="500px">
+       <div class=".img-container">
+        <img src="images/prespos-soc-rep.png" alt="bookmarked pg" width="500px">
+        </div>
       </article>
   </section>
     
@@ -140,8 +161,6 @@
       <article class="grid-article">Story A</article>
       <article class="grid-article">Story B</article>
       <article class="grid-article">Story C</article>
-      <article class="grid-article">Story D</article>
-      <article class="grid-article">Story E</article>
     </div>
 </section>
 
@@ -151,33 +170,37 @@
     <div class="feature-area">
       <article class="feature-article">
         <div class="article-text">
-        <a href="https://www.independent.co.uk/tech/renewable-energy-solar-nepal-bhutan-iceland-b2533699.html"><h1>PRESENT NEGATIVE TECH</h1></a> 
-        <p>Albania, Bhutan, Nepal, Paraguay, Iceland, Ethiopia and the Dem. Rp. of Congo produced more than 99.7 per cent of their electricity using geothermal, hydro, solar or wind power.</p>
+        <a href="https://www.verywellhealth.com/proposed-medicaid-work-requirements-lost-coverage-11747483?utm"><h1>Proposed Medicaid Work Requirements May Strip Health Coverage from Millions</h1></a> 
+        <p>Republican lawmakers have introduced a federal spending bill that would impose work requirements on many Medicaid recipients. If enacted, up to 10 million Americans could lose their health insurance coverage.</p>
+        <span class="read">7 MIN READ</span>
        </div>
-        <img src="images/feature-article-present.png" alt="bookmarked pg" width="500px">
+        <img src="images/presneg-soc-medi.png" alt="bookmarked pg" width="500px">
       </article>
 
       <img id="line-side" src="images/line-side.svg" alt="line divider">
 
       <div class="side-column">
         <article class="top-article">
-          <img src="images/feature-article-present.png" alt="bookmarked pg" width="375px">
-          <h1>Top News Headline</h1>
-          <p>Albania, Bhutan, Nepal, Paraguay, Iceland, Ethiopia and the Dem. Rp. of Congo produced more than 99.7 per cent of their electricity using geothermal, hydro, solar or wind power.</p>
+          <img src="images/pressoc-neg-layoffs.png" alt="bookmarked pg" width="375px">
+          <h1><a href="https://www.npr.org/sections/shots-health-news/2025/02/24/nx-s1-5304255/federal-workers-fired-mental-health">Mass Federal Layoffs Lead to Mental Health Crisis</h1></a>
+          <p>The cuts have "effectively wiped out" several federal departments and agencies with massive layoffs, such as the Department of Education, AmeriCorps, the U.S. Agency for International Development, and the Consumer Financial Protection Bureau.</p>
+          <span class="read">4 MIN READ</span>
         </article>
         <article class="top-article">
-          <img src="images/feature-article-present.png" alt="bookmarked pg" width="375px">
-          <h1>Top News Headline</h1>
-          <p>Albania, Bhutan, Nepal, Paraguay, Iceland, Ethiopia and the Dem. Rp. of Congo produced more than 99.7 per cent of their electricity using geothermal, hydro, solar or wind power.</p>
+          <img src="images/presneg-soctran.png" alt="bookmarked pg" width="375px">
+          <h1><a href="https://www.nytimes.com/2025/01/28/us/politics/trump-trans-gender-affirming-care.html">Trump Signs Order Restricting Gender-Affirming Treatments for Minors</h1></a>
+          <p>Several states have implemented laws restricting gender-affirming care for transgender youth, with some requiring sterilization to change legal documents. Additionally, hate crimes against LGBTQ+ individuals have risen sharply.</p>
+          <span class="read">2 MIN READ</span>
         </article>
       </div>
 
-      <article id="feature1" class="feature-article">
+      <article id="feature2" class="feature-article">
         <div class="article-text">
-        <a href="https://www.independent.co.uk/tech/renewable-energy-solar-nepal-bhutan-iceland-b2533699.html"><h1>7 countries now generate 100% of their electricity from renewables</h1></a> 
-        <p>Albania, Bhutan, Nepal, Paraguay, Iceland, Ethiopia and the Dem. Rp. of Congo produced more than 99.7 per cent of their electricity using geothermal, hydro, solar or wind power.</p>
+        <a href="https://apnews.com/article/trump-venezuela-el-salvador-immigration-dd4f61999f85c4dd8bcaba7d4fc7c9af"><h1>Deportation of Asylum Seekers Without Due Process</h1></a> 
+        <p>The Trump administration has sent hundreds of immigrants to El Salvador despite a federal judge’s order temporarily halting deportations, which was issued under an 18th century wartime law claiming to be aimed at gang members.</p>
+        <span class="read">4 MIN READ</span>
        </div>
-        <img src="images/feature-article-present.png" alt="bookmarked pg" width="500px">
+        <img src="images/presneg-soc-dep.png" alt="bookmarked pg" width="500px">
       </article>
 
   </section>
@@ -186,15 +209,12 @@
         <article class="grid-article">Story A</article>
         <article class="grid-article">Story B</article>
         <article class="grid-article">Story C</article>
-        <article class="grid-article">Story D</article>
-        <article class="grid-article">Story E</article>
       </div>
 </section>
   <!-- PRESENT  -->
 
   <!-- PAST -->
 <section id="pastPage" class="hidden">
-
   <div class="past-section">
     <div class="col">
       <h3>Supreme Court Ends School Segregation</h3>
@@ -255,83 +275,73 @@
     </div>
 
   </div>
-
-  <!-- <div class="past-section section-two">
-    <div class="col">Article A2</div>
-    <div class="col">Article B2</div>
-    <div class="col">Article C2</div>
-    <div class="col">Article D2</div>
-    <div class="col photo-col">Photo or article E2</div>
-  </div> -->
 </section>
 
 <section id="pastPage1" class="hidden">
   
   <div class="past-section">
     <div class="col">
-      <h3>Supreme Court Ends School Segregation</h3>
-      <time datetime="1954-05-17" class="news-date">May 17, 1954</time>
-      <p>Brown v. Board of Education declares 'Separate But Equal' unconstitutional in a landmark decision as the U.S. Supreme Court unanimously rules that racial segregation in public schools violates the 14th Amendment, overturning the "separate but equal" doctrine.</p>
-      <span class="signifi"><strong>📌</strong> Set legal precedent that segregation was unequal and laid groundwork for future desegregating in the U.S.</span>
+      <h3>U.S. Launches Sweeping Deportation Campaign Targeting Mexican Laborers</h3>
+      <time datetime="1954-June" class="news-date">June, 1954</time>
+      <p>The U.S. government began Operation Wetback to deport undocumented Mexican laborers, deporting of over 1 million people, including U.S. citizens of Mexican descent. Many were deported without due process, often in harsh conditions.</p>
+      <span class="signifi"><strong>📌</strong> Laid the groundwork for modern immigration raids and set a precedent for racialized immigration enforcement. It parallels with recent deportations, reminding us how immigration policy continues to impact these communities.</span>
     <div>
-      <h3>Federal Law Eliminates Barriers to Black Voter Registration</h3>
-      <time datetime="1965-08-06" class="news-date">August 6, 1965</time>
-      <p>The Voting Rights Act was signed, banning racial discrimination in voting and implementing federal oversight in areas with histories of suppression.</p>
-      <span class="signifi"><strong>📌</strong> Helped enforce the 15th Amendment and increase voter participation among African Americans, especially in the South.</span>
+      <h3>Nixon Declares Drug Abuse “Public Enemy No. 1”</h3>
+      <time datetime="1954-17-06" class="news-date">June 17, 1971</time>
+      <p>President Nixon officially launched the War on Drugs, shifting federal focus toward law enforcement over public health.</p>
+      <span class="signifi"><strong>📌</strong> Arrests expanded, targeting Black and Latino neighborhoods, despite similar drug usage rates across racial lines. This has contributed to mass incarceration, which still burdens the U.S. today.</span>
     </div>
   </div>
 
     <div class="col photo">
-      <img src="images/pastpic.png" alt="1954: Supreme Court Ends School Segregation">
-      <h3>Legislation Prohibits Discrimination in Public Spaces and Employment</h3>
-      <time datetime="1964-02-07" class="news-date">July 2, 1964</time>
-      <p>President Lyndon B. Johnson signed the Civil Rights Act, outlawing segregation in public places and banning employment discrimination based on race, color, religion, sex, or national origin.</p>
-      <span class="signifi"><strong>📌</strong> Provided federal enforcement mechanisms to minorities and paved the way for the Voting Act of 1965 and Fair housing Act of 1968.</span>
+      <img src="images/pastsoc-neg.png" alt="Black Wall Street Burned to Ashes in White Mob Violence">
+      <h3>Black Wall Street Burned to Ashes in White Mob Violence</h3>
+      <time datetime="1921-01-06" class="news-date">June 1, 1921</time>
+      <p>A white mob armed with weapons from city officials attacked the prosperous Black neighborhood of Greenwood in Tulsa, Oklahoma, killing hundreds of Black residents and destroying their businesses and homes.</p>
+      <span class="signifi"><strong>📌</strong> This massacre symbolizes how systemic racism and white violence were used to suppress Black economies. Past actions like these still impact Black communities systemically, and modern conversations around reparations and racial justice should be had.</span>
     </div>
 
     <div class="col2">
       <div>
         <div class="col2text">
-        <h2>Black Lives Matter Movement Begins</h2>
-        <time datetime="2013" class="news-date">2013</time>
+        <h2>Activists Demand Action as AIDS Death Toll Mounts</h2>
+        <time datetime="1985-17-09" class="news-date">September 17, 1985</time>
         </div>
-        <h3>Hashtag Sparks Global Movement Against Racial Injustice</h3>
-        <p>After George Zimmerman was found not guilty in the shooting death of Trayvon Martin, the #BlackLivesMatter hashtag was created, evolving into a global movement advocating against racism and violence toward Black individuals.</p>
+        <h3>Government Inaction During AIDS Crisis</h3>
+        <p>The Reagan administration delayed any acknowledgment of AIDS for four years, with activists demanding government action and funding until public pressure grew, even as thousands—primarily gay men died.</p>
         <span class="signifi"><strong>📌</strong> Lead to significant changes in workplace policies, increased support for survivors, and more conversations about sexual misconduct.</span>
       </div>
       <div>
         <div class="col2text">
-        <h2>#MeToo Movement Gains Momentum</h2>
-        <time datetime="2017" class="news-date">2017</time>
+        <h2>New Orleans Devastated; Government Response Criticized</h2>
+        <time datetime="2005-29-08" class="news-date">August 29, 2005</time>
         </div>
-        <h3>Social Media Campaign Highlights Pervasive Sexual Harassment</h3>
-        <p>The hashtage surged in 2017 as personal experiences of sexual harassment and assault were shared worldwide, leading to increased awareness and solidarity.</p>
-        <span class="signifi"><strong>📌</strong> Brought international attention to issues of police brutality and systemic racism, prompting protests demanding justice and reform.</span>
+        <h3>Hurricane Katrina and Systemic Neglect</h3>
+        <p>Federal response to Hurricane Katrina was slow and disorganized, especially in Black neighborhoods. For days, areas were flooded and poor evacuation planning left thousands stranded.</p>
+        <span class="signifi"><strong>📌</strong> Katrina exposed racial and economic divides in disaster response. It brought to light issues with urban inequality and the climate which remain relevant today.</span>
       </div>
     </div>
 
     <div class="col3">
       <div>
-      <h3><em>Landmark Legislation Ensures Rights for Individuals with Disabilities</em></h3>
-      <time datetime="1990-26-07" class="news-date">July 26, 1990</time>
-      <p>Americans with Disabilities Act was signed, prohibiting discrimination against people with disabilities in employment, public accommodations, transportation, and telecommunications.</p>
-      <span class="signifi"><strong>📌</strong> Helped provide equal opportunities and accesibility for disabled individuals. It also created more awareness and inlusivity within different sectors of society.</span>
+      <h3><em>Bipartisan Crime Bill Expands Police and Prison Systems</em></h3>
+      <time datetime="19904-13-09" class="news-date">September 13, 19904</time>
+      <p>Signed by President Clinton, the Violent Crime Control and Law Enforcement Act expanded prison capacity, and added more police officers and stricter sentencing laws. It led to a sharp rise in incarceration over time.</p>
+      <span class="signifi"><strong>📌</strong> The bill's legacy is deeply tied to today’s debates on police reform, prison abolition, and racial disparities in the criminal justice system.</span>
       </div>
       <div>
-        <img src="images/pastpic1.png" alt="Obergefell v. Hodges Grants Marriage Equality Across All States">
-        <h3><em>Obergefell v. Hodges Grants Marriage Equality Across All States</em></h3>
-        <time datetime="2015-26-06" class="news-date">June 26, 2015</time>
-        <p>The Supreme Court ruled that states cannot constitutionally keep same-sex couples from marrying and must recognize their unions.</p>
+        <img src="images/pastneg-soc1.png" alt="President Orders Mass Internment of Japanese Americans">
+        <h3><em>President Orders Mass Internment of Japanese Americans</em></h3>
+        <time datetime="1942-19-02" class="news-date">February 19, 1942</time>
+        <p>Following the attack on Pearl Harbor, President Franklin D. Roosevelt signed Executive Order 9066, which led to the forced relocation and internment of over 120,000 Japanese Americans—most of them U.S. citizens. Families lost homes, businesses, and civil liberties as they were sent to camps surrounded by barbed wire.</p>
         <span class="signifi"><strong>📌</strong> This was a culminating point after decades of activism and furthemore established equality under the law.</span>
       </div>
     </div>
-
   </div>
 </section>
 <!--  PAST  -->
 
   <!-- FUTURE -->
-  <!-- <section id="futurePage" class="hidden"> -->
     <section id="futurePage" class="hidden" style="position: relative; min-height: 100vh;">
 
       <!-- Vanta Background -->
@@ -344,37 +354,87 @@
           <div class="feature-area">
             <article class="future-article">
               <div class="article-text">
-                <a href="https://www.independent.co.uk/tech/renewable-energy-solar-nepal-bhutan-iceland-b2533699.html">
-                  <h1>FUTURE SOCIAL NEWS</h1>
+                <a href="https://hbr.org/2021/05/neurodiversity-as-a-competitive-advantage">
+                  <h1>Neurodivergent Inclusion in a Post-AI Workplace</h1>
                 </a>
-                <p>Albania, Bhutan, Nepal, Paraguay, Iceland, Ethiopia and the Dem. Rp. of Congo produced more than 99.7 per cent of their electricity using geothermal, hydro, solar or wind power.</p>
+                <p>As AI reshapes jobs, there's a push for greater inclusion of neurodivergent individuals and their skills.</p>
               </div>
-              <img src="images/feature-article-present.png" alt="bookmarked pg" width="450px">
+              <img src="images/futsoc-posneuro.png" alt="bookmarked pg" width="450px">
             </article>
     
             <img id="line-side" src="images/line-side.svg" alt="line divider">
     
             <div class="sidefuture-column">
               <article class="topfuture-article">
-                <img src="images/feature-article-present.png" alt="bookmarked pg" width="315px">
-                <h1>Top News Headline</h1>
-                <p>Albania, Bhutan, Nepal, Paraguay, Iceland, Ethiopia and the Dem. Rp. of Congo produced more than 99.7 per cent of their electricity using geothermal, hydro, solar or wind power.</p>
+                <img src="images/futsoc-pos4day.png" alt="bookmarked pg" width="315px">
+                <h1><a href="https://www.apa.org/monitor/2025/01/rise-of-4-day-workweek">The Right to Disconnect: Is a 4-Day Workweek the Future?</h1></a>
+                <p>The shift towards a four-day workweek reflects changing attitudes towards work-life balance.</p>
               </article>
               <article class="topfuture-article">
-                <img src="images/feature-article-present.png" alt="bookmarked pg" width="315px">
-                <h1>Top News Headline</h1>
-                <p>Albania, Bhutan, Nepal, Paraguay, Iceland, Ethiopia and the Dem. Rp. of Congo produced more than 99.7 per cent of their electricity using geothermal, hydro, solar or wind power.</p>
+                <img src="images/futsoc-posmedGen.png" alt="bookmarked pg" width="315px">
+                <h1><a href="https://www.hmi.edu/the-future-of-healthcare-trends-and-innovations-impacting-medical-careers/#:~:text=AI%2Dpowered%20algorithms%20can%20assist,%2Dbeing%20in%20real%2Dtime."></a>Genomic Medicine: Personalized Treatments Tailored to Your DNA</h1>
+                <p>Advancements in genomic medicine are enabling healthcare providers to customize treatments based on individual genetic profiles, leading to more effective and targeted therapies.</p>
               </article>
             </div>
     
-            <article id="future1" class="future-article">
+            <article class="future-article futurefix">
               <div class="article-text">
-                <a href="https://www.independent.co.uk/tech/renewable-energy-solar-nepal-bhutan-iceland-b2533699.html">
-                  <h1>7 countries now generate 100% of their electricity from renewables</h1>
+                <a href="https://www.news-medical.net/health/What-the-Newest-mRNA-Vaccines-Could-Do-Beyond-COVID.aspx#:~:text=This%20breakthrough%20has%20now%20catalyzed,genetic%20disorders%2C%20and%20regenerative%20medicine.">
+                  <h1>mRNA Isn’t Just for COVID: A New Era of Vaccines and Cancer Treatments</h1>
                 </a>
-                <p>Albania, Bhutan, Nepal, Paraguay, Iceland, Ethiopia and the Dem. Rp. of Congo produced more than 99.7 per cent of their electricity using geothermal, hydro, solar or wind power.</p>
+                <p>The success of mRNA vaccines during the COVID-19 pandemic has paved the way for new treatments targeting various diseases, including cancer and HIV.</p>
               </div>
-              <img src="images/feature-article-present.png" alt="bookmarked pg" width="450px">
+              <img src="images/futsoc-posmRna.png" alt="bookmarked pg" width="450px">
+            </article>
+          </div>
+        </section>
+      </div>
+    
+    </section>
+
+    <section id="futurePage1" class="hidden" style="position: relative; min-height: 100vh;">
+
+      <!-- Vanta Background -->
+      <div id="vanta-bg1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;"></div>
+    
+      <!-- Article Content Layer -->
+      <div id="futureContent" style="position: relative; z-index: 1; padding: 1em; color: white;">
+        <section class="article-grid">
+          <!-- Feature + Side Column -->
+          <div class="feature-area">
+            <article class="future-article">
+              <div class="article-text">
+                <a href="https://www.ilo.org/resource/article/artificial-intelligence-illusion-how-invisible-workers-fuel-automated#:~:text=The%20survey%20also%20found%20that,these%20issues%20or%20any%20worker/">
+                  <h1>AI Ghost Workers: The Hidden Labor Behind Your Smart Apps</h1>
+                </a>
+                <p>As AI tools grow smarter, invisible labor behind the scenes—labelers and moderators face low wages and no protections.</p>
+              </div>
+              <img src="images/futsoc-negAIworkers.png" alt="bookmarked pg" width="450px">
+            </article>
+    
+            <img id="line-side" src="images/line-side.svg" alt="line divider">
+    
+            <div class="sidefuture-column">
+              <article class="topfuture-article">
+                <img src="images/futureneg-socgreen.png" alt="bookmarked pg" width="315px">
+                <h1><a href="https://www.nature.com/articles/s41467-022-31572-1">Climate Gentrification: When Green Upgrades Push Residents Out</h1></a>
+                <p> Investments in green infrastructure may lead to increased property values, causing displacement of vulnerable populations.</p>
+              </article>
+              <article class="topfuture-article">
+                <img src="images/futsoc-negdeepf.png" alt="bookmarked pg" width="315px">
+                <h1>Deepfake Identity Theft: When AI Steals Your Face</h1>
+                <p>Advanced deepfakes are enabling new forms of identity theft and fraud, and bring up personal privacy and security concerns.</p>
+              </article>
+            </div>
+    
+            <article class="future-article futurefix">
+              <div class="article-text">
+                <a href="https://www.theguardian.com/environment/2023/nov/15/water-related-violence-war-peace?utm">
+                  <h1>Water Wars: When Cities Compete for Clean Access</h1>
+                </a>
+                <p>Global water scarcity is leading to increased conflicts over resources, and climate change and population growth are intensifying competition for freshwater.</p>
+              </div>
+              <img src="images/futsoc-negwater.png" alt="bookmarked pg" width="450px">
             </article>
           </div>
         </section>
