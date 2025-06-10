@@ -51,8 +51,8 @@
           <li><a href="#">U.S.</a></li>
           <li><a href="#">International</a></li>
           <li><a href="#">Canada</a></li>
-          <li><a href="#">Espanol</a></li>
-          <li><a href="#">$#</a></li>
+          <li><a href="#">Español</a></li>
+          <li><a href="#">中文</a></li>
         </ul>
       </nav>
 
@@ -66,19 +66,18 @@
         <!-- <p>hello</p> -->
       </div>
 
-      <h1 id="site-title">The New Foresight Times</h1>
-
       <select id="categoryFilter">
         <option value="select">Category</option>
         <option value="Social - Positive">Social - Positive</option>
         <option value="Social - Negative">Social - Negative</option>
-        <option value="Politics - Positive">Business - Positive</option>
-        <option value="Politics - Negative">Business - Negative</option>
+        <option value="Econ/Politics - Positive">Econ/Politics - Positive</option>
+        <option value="Econ/Politics - Negative">Econ/Politics - Negative</option>
         <option value="World - Positive">World - Positive</option>
         <option value="World - Negative">World - Negative</option>        
       </select>
     </div>
 
+    <h1 id="site-title">The New Foresight Times</h1>
 
     <nav id="main-nav1" class="showing">
       <ul>
@@ -98,17 +97,16 @@
     </div>
   </header>
 
-  <div id="overlay" class="hidden">
-    <button id="close">x</button>
-    <h1>Instructions</h1>
-    <p>Follow the steps below to learn how to navigate and use the site.</p>
-    <ul>
-      <li>Select a time period from the dropdown selection, either past, present, or future.</li>
-      <li>Next, select a category from the category dropdown</li>
-      <li>That's it! Now you can explore current news, learn from the past, or look at potential futures.</li>
-    </ul>
-  </div>
-
+    <div id="overlay" class="hidden">
+      <button id="close">x</button>
+      <h1>Instructions</h1>
+      <p>Follow the steps below to learn how to navigate and use the site.</p>
+      <ul>
+        <li>First, select a time period from the dropdown selection (past, present, or future)</li>
+        <li>Next, select a category from the category dropdown</li>
+        <li>That's it! Now you can explore current news, learn from the past, or look at potential futures.</li>
+      </ul>
+    </div>
 
   <!-- PRESENT -->
   <section id="presentPositiveSocial" class="hidden">
@@ -122,9 +120,7 @@
         <p>The Minnesota Supreme Court ruled that requiring formerly incarcerated individuals to pay all fines and fees before restoring their right to vote is unconstitutional.</p>
         <span class="read">3 MIN READ</span>
        </div>
-       <div class=".img-container">
-        <img src="images/pres-soc-pos-minn.png" alt="bookmarked pg" width="500px">
-        </div>
+        <img src="images/pres-soc-pos-minn.png" alt="bookmarked pg">
       </article>
 
       <img id="line-side" src="images/line-side.svg" alt="line divider">
@@ -150,18 +146,16 @@
         <p>Multiple U.S. cities have begun offering housing, healthcare, or direct payments to Black residents as part of pilot reparations initiatives addressing the legacy of slavery and systemic racism.</p>
         <span class="read">5 MIN READ</span>
        </div>
-       <div class=".img-container">
-        <img src="images/prespos-soc-rep.png" alt="bookmarked pg" width="500px">
-        </div>
+        <img src="images/prespos-soc-rep.png" alt="bookmarked pg">
       </article>
   </section>
     
     <!-- Articles Grid -->
-    <div class="presentGrid">
+    <!-- <div class="presentGrid">
       <article class="grid-article">Story A</article>
       <article class="grid-article">Story B</article>
       <article class="grid-article">Story C</article>
-    </div>
+    </div> -->
 </section>
 
 <section id="presentNegativeSocial" class="hidden">
@@ -204,20 +198,186 @@
       </article>
 
   </section>
-      <!-- Articles Grid -->
-      <div class="presentGrid">
-        <article class="grid-article">Story A</article>
-        <article class="grid-article">Story B</article>
-        <article class="grid-article">Story C</article>
-      </div>
+
 </section>
+
+<section id="presentPositiveEcon" class="hidden">
+   
+  <section class="article-grid">
+    <!-- Feature + Side Column -->
+    <div class="feature-area">
+      <article class="feature-article">
+        <div class="article-text">
+        <a href="https://www.washingtonpost.com/business/2025/06/06/jobs-report-may-unemployment/?utm"><h1>Employers Added 139,000 Jobs in May Amid Economic Headwinds</h1></a> 
+        <p>In May 2025, U.S. employers added 139,000 nonfarm payrolls, beating expectations and keeping unemployment steady at 4.2%, near historic lows.</p>
+        <span class="read">3 MIN READ</span>
+       </div>
+        <img src="images/pres-soc-pos-minn.png" alt="bookmarked pg">
+      </article>
+
+      <img id="line-side" src="images/line-side.svg" alt="line divider">
+
+      <div class="side-column">
+        <article class="top-article">
+          <img src="images/presentsoc-pos.png" alt="bookmarked pg" width="375px">
+          <h1><a href="https://www.cas.org/resources/cas-insights/scientific-breakthroughs-2025-emerging-trends-watch?utm">New CRISPR-Based Therapies Forge Path in Genetic Medicine</h1></a>
+          <p>With the FDA’s approval of Casgevy, the first CRISPR therapy, numerous clinical trials are now underway. Researchers are exploring epigenetic methods to treat genetic diseases like muscular dystrophy and cystic fibrosis.</p>
+          <span class="read">5 MIN READ</span>
+        </article>
+        <article class="top-article">
+          <img src="images/presentsoc-posside.png" alt="bookmarked pg" width="375px">
+          <h1><a href="https://www.cas.org/resources/cas-insights/scientific-breakthroughs-2025-emerging-trends-watch?utm">Smart Materials Reshape Climate Tech and Connectivity</h1></a>
+          <p>A new wave of engineered materials are transforming how we manage energy, these materials can adapt in real time to environmental conditions and offer lower energy solutions.</p>
+          <span class="read">7 MIN READ</span>
+        </article>
+      </div>
+
+      <article id="feature2" class="feature-article">
+        <div class="article-text">
+        <a href="https://www.cas.org/resources/cas-insights/scientific-breakthroughs-2025-emerging-trends-watch?utm"><h1>New Tech Turns Industrial Waste and Batteries into Resources, Not Pollution</h1></a> 
+        <p>Innovations in chemical recycling and battery waste recovery are advancing industrial sustainability by turning hard-to-recycle plastics and manufacturing byproducts into usable raw materials.</p>
+        <span class="read">4 MIN READ</span>
+       </div>
+        <img src="images/prespos-soc-rep.png" alt="bookmarked pg">
+      </article>
+  </section>
+    
+    <!-- Articles Grid -->
+</section>
+
+<section id="presentNegativeEcon" class="hidden">
+  <section class="article-grid">
+    <!-- Feature + Side Column -->
+    <div class="feature-area">
+      <article class="feature-article">
+        <div class="article-text">
+        <a href="https://www.nytimes.com/2025/06/08/us/politics/trump-california-immigration.html"><h1>Trump Jumps at the Chance for a Standoff in California Over Immigration</h1></a> 
+        <p>The situation has all the elements that President Trump seeks: a showdown with a top political rival in a deep blue state over an issue core to his agenda.</p>
+        <span class="read">5 MIN READ</span>
+       </div>
+        <img src="images/pres-soc-pos-minn.png" alt="bookmarked pg">
+      </article>
+
+      <img id="line-side" src="images/line-side.svg" alt="line divider">
+
+      <div class="side-column">
+        <article class="top-article">
+          <img src="images/presentsoc-pos.png" alt="bookmarked pg" width="375px">
+          <h1><a href="https://www.nytimes.com/2025/06/08/world/middleeast/gaza-flotilla-greta-thunberg-israel.html">Israel Intercepts Gaza-Bound Aid Ship With Greta Thunberg Aboard</h1></a>
+          <p>Israel had vowed to prevent the vessel from reaching Gaza, saying its military would use “any means necessary” to stop it from breaching a naval blockade.</p>
+          <span class="read">6 MIN READ</span>
+        </article>
+        <article class="top-article">
+          <img src="images/presentsoc-posside.png" alt="bookmarked pg" width="375px">
+          <h1><a href="https://www.reuters.com/breakingviews/us-economic-stall-hints-freefall-come-2025-04-30/">Tariffs Risk Triggering Inflation and Economy Shrinkage</h1></a>
+          <p>The U.S. economy contracted for the first time in three years, largely due to front-loaded imports before tariffs and government layoffs. Global organizations warn of further recession risk if trade tensions continue.</p>
+          <span class="read">4 MIN READ</span>
+        </article>
+      </div>
+
+      <article id="feature2" class="feature-article">
+        <div class="article-text">
+        <a href="https://www.nytimes.com/2025/06/03/world/middleeast/gaza-aid-site-shooting-israel.html"><h1>Israeli Soldiers Open Fire Near Gaza Aid Site. Gaza Officials Say 27 Are Killed.</h1></a> 
+        <p>It was the second such shooting in three days near a food distribution center, which is part of a contentious new Israeli and American-backed initiative.</p>
+        <span class="read">5 MIN READ</span>
+       </div>
+        <img src="images/prespos-soc-rep.png" alt="bookmarked pg">
+      </article>
+  </section>
+
+</section>
+
+<section id="presentPositiveWorld" class="hidden">
+  <section class="article-grid">
+    <!-- Feature + Side Column -->
+    <div class="feature-area">
+      <article class="feature-article">
+        <div class="article-text">
+        <a href="https://informationisbeautiful.net/beautifulnews/618-women-parliament/"><h1>More Women are Members of Parliament Than Ever Before in History</h1></a> 
+        <p>Nearly 24% of representatives worldwide are now women. Parliaments in Rwanda, Denmark, Bolivia and Cuba lead the way with over 40%.</p>
+        <span class="read">4 MIN READ</span>
+       </div>
+        <img src="images/pres-soc-pos-minn.png" alt="bookmarked pg">
+      </article>
+
+      <img id="line-side" src="images/line-side.svg" alt="line divider">
+
+      <div class="side-column">
+        <article class="top-article">
+          <img src="images/presentsoc-pos.png" alt="bookmarked pg" width="375px">
+          <h1><a href="https://informationisbeautiful.net/beautifulnews/1111-europe-wind-power/">Europe Could Power the Entire World with Wind Power</h1></a>
+          <p>Nearly half of European land is perfect for wind power with a potential of 497 exajoules, surpassing the world's expected 450 exajoule demand in 2050.</p>
+          <span class="read">5 MIN READ</span>
+        </article>
+        <article class="top-article">
+          <img src="images/presentsoc-posside.png" alt="bookmarked pg" width="375px">
+          <h1><a href="https://newatlas.com/medical/cancer-vaccine-dogs-doubles-survival-rates-clinical-trial/">New Dog Cancer Vaccine Increases Survival Rates</h1></a>
+          <p>New vaccine almost doubles the 12-month survival rate for dogs with some types of cancer, especially colorectal or breast cancers.</p>
+          <span class="read">3 MIN READ</span>
+        </article>
+      </div>
+
+      <article id="feature1" class="feature-article">
+        <div class="article-text">
+        <a href="https://www.independent.co.uk/tech/renewable-energy-solar-nepal-bhutan-iceland-b2533699.html"><h1>7 countries now generate 100% of their electricity from renewables</h1></a> 
+        <p>Albania, Bhutan, Nepal, Paraguay, Iceland, Ethiopia and the Democratic Republic of Congo produced more than 99.7 per cent of the electricity they consumed using geothermal, hydro, solar or wind power.</p>
+        <span class="read">6 MIN READ</span>
+       </div>
+        <img src="images/prespos-soc-rep.png" alt="bookmarked pg">
+      </article>
+  </section>
+    
+</section>
+
+<section id="presentNegativeWorld" class="hidden">
+  <section class="article-grid">
+    <!-- Feature + Side Column -->
+    <div class="feature-area">
+      <article class="feature-article">
+        <div class="article-text">
+        <a href="https://www.nytimes.com/2025/06/09/world/europe/russia-ukraine-crimea-war.html"><h1>Crimea, Once a Crossroad of Civilizations, Finds Itself Isolated and Under Attack</h1></a> 
+        <p>Mostly Russian visitors now cavort along its historic beaches, hoping to avoid the Ukrainian drones whizzing toward military targets.</p>
+        <span class="read">5 MIN READ</span>
+       </div>
+        <img src="images/pres-soc-pos-minn.png" alt="bookmarked pg">
+      </article>
+
+      <img id="line-side" src="images/line-side.svg" alt="line divider">
+
+      <div class="side-column">
+        <article class="top-article">
+          <img src="images/presentsoc-pos.png" alt="bookmarked pg" width="375px">
+          <h1><a href="https://www.nytimes.com/2025/06/08/world/americas/world-cup-soccer-trump-immigration.html">Soccer Fans Fear Being Targets of U.S. Immigration Raids</h1></a>
+          <p>The Trump administration’s policies may have contributed to lower ticket sales for a Club World Cup tournament starting next week.</p>
+          <span class="read">6 MIN READ</span>
+        </article>
+        <article class="top-article">
+          <img src="images/presentsoc-posside.png" alt="bookmarked pg" width="375px">
+          <h1><a href="https://www.nytimes.com/2025/06/07/world/americas/colombia-senator-shot.html">A Colombian Senator, Miguel Uribe, Is Shot at a Campaign Event</h1></a>
+          <p>The brazen attack, captured on video, recalled the political violence of past decades. The senator arrived at a hospital in critical condition.</p>
+          <span class="read">4 MIN READ</span>
+        </article>
+      </div>
+
+      <article id="feature1" class="feature-article">
+        <div class="article-text">
+        <a href="https://www.nytimes.com/2025/06/08/world/asia/japan-military-trump-china.html"><h1>Japan Flexes Its Military Muscle at China, and Trump</h1></a> 
+        <p>A highly visible missile base on Okinawa is part of a Japanese defense buildup made amid fears of Beijing’s growing power and questions about U.S. commitment.</p>
+        <span class="read">5 MIN READ</span>
+       </div>
+        <img src="images/prespos-soc-rep.png" alt="bookmarked pg">
+      </article>
+  </section>
+
+</section>
+
   <!-- PRESENT  -->
 
   <!-- PAST -->
 <section id="pastPage" class="hidden">
   <div class="past-section">
     <div class="col">
-      <h3>Supreme Court Ends School Segregation</h3>
+      <h3><a href="https://supreme.justia.com/cases/federal/us/347/483/#tab-opinion-1940809">Supreme Court Ends School Segregation</h3></a>
       <time datetime="1954-05-17" class="news-date">May 17, 1954</time>
       <p>Brown v. Board of Education declares 'Separate But Equal' unconstitutional in a landmark decision as the U.S. Supreme Court unanimously rules that racial segregation in public schools violates the 14th Amendment, overturning the "separate but equal" doctrine.</p>
       <span class="signifi"><strong>📌</strong> Set legal precedent that segregation was unequal and laid groundwork for future desegregating in the U.S.</span>
@@ -325,7 +485,7 @@
     <div class="col3">
       <div>
       <h3><em>Bipartisan Crime Bill Expands Police and Prison Systems</em></h3>
-      <time datetime="19904-13-09" class="news-date">September 13, 19904</time>
+      <time datetime="1994-13-09" class="news-date">September 13, 1994</time>
       <p>Signed by President Clinton, the Violent Crime Control and Law Enforcement Act expanded prison capacity, and added more police officers and stricter sentencing laws. It led to a sharp rise in incarceration over time.</p>
       <span class="signifi"><strong>📌</strong> The bill's legacy is deeply tied to today’s debates on police reform, prison abolition, and racial disparities in the criminal justice system.</span>
       </div>
@@ -339,6 +499,262 @@
     </div>
   </div>
 </section>
+
+<section id="pastPositiveEcon" class="hidden">
+  
+  <div class="past-section">
+    <div class="col">
+      <h3><a href="https://teachingamericanhistory.org/document/henry-fords-five-day-week/">Ford Introduces the $5‑Day</h3></a>
+      <time datetime="1914-05-05" class="news-date">May 5, 1914</time>
+      <p>Henry Ford revolutionized labor standards by introducing a \$5 workday and a five-day, 40-hour workweek. This groundbreaking move in 1914 doubled wages and reshaped American industry and worker expectations.</p>
+      <span class="signifi"><strong>📌</strong> Set a benchmark for labor rights, increased consumerism, and highlighted the value of employee well-being.</span>
+    <div>
+      <h3><a href="https://www.nasa.gov/history/july-20-1969-one-giant-leap-for-mankind/">Apollo 11 Moon Landing</h3></a>
+      <time datetime="1969-20-07" class="news-date">July 20, 169</time>
+      <p>Neil Armstrong and Buzz Aldrin walk on the moon and helped begin a new movement of scientific innovation and space exploration.</p>
+      <span class="signifi"><strong>📌</strong> Showcased U.S. scientific innovation and began advances in technology and education.</span>
+    </div>
+  </div>
+
+    <div class="col photo">
+      <img src="images/pastsoc-neg.png" alt="Black Wall Street Burned to Ashes in White Mob Violence">
+      <h3><a href="https://www.presidency.ucsb.edu/documents/presidential-documents-archive-guidebook/fireside-chats-f-roosevelt">Roosevelt’s First New Deal Chat</h3></a>
+      <time datetime="1933-12-03" class="news-date">March 12, 1933</time>
+      <p>FDR addresses a worn nation on radio, sharing confidence and outlining recovery for the Great Depression.</p>
+      <span class="signifi"><strong>📌</strong> Pioneered direct presidential communication and launched transformative economic programs.</span>
+    </div>
+
+    <div class="col2">
+      <div>
+        <div class="col2text">
+        <h2>Racial Segregation Ruling Changed</h2>
+        <time datetime="1954-17-05" class="news-date">May 17, 1954</time>
+        </div>
+        <h3><a href="https://supreme.justia.com/cases/federal/us/347/483/#tab-opinion-1940809">Brown v. Board of Education Ruling</h3></a>
+        <p>The Supreme Court declares racial segregation in public schools unconstitutional.</p>
+        <span class="signifi"><strong>📌</strong> A foundational victory for civil rights and desegregation across America.</span>
+      </div>
+      <div>
+        <div class="col2text">
+        <h2>U.S. Enters the Korean War</h2>
+        <time datetime="1950-25-06" class="news-date">June 25, 1950</time>
+        </div>
+        <h3><a href="https://www.history.com/articles/korean-war"></h3></a>
+        <p>President Truman commits U.S. forces to repel North Korean aggression under UN leadership.</p>
+        <span class="signifi"><strong>📌</strong> Reinforced U.S. global leadership during the Cold War and deter expansion of North Korea.</span>
+      </div>
+    </div>
+
+    <div class="col3">
+      <div>
+        <h3><a href="https://www.hhs.gov/healthcare/about-the-aca/index.html"><em>Affordable Care Act Signed</em></h3></a> 
+      <time datetime="2010-23-03" class="news-date">March 23, 2010</time>
+      <p>President Obama signs landmark healthcare reform expanding coverage to tens of millions of Americans.</p>
+      <span class="signifi"><strong>📌</strong> Marked the most extensive change to U.S. healthcare access since Medicare.</span>
+      </div>
+      <div>
+        <img src="images/pastneg-soc1.png" alt="President Orders Mass Internment of Japanese Americans">
+        <h3><a href="https://visit.archives.gov/whats-on/explore-exhibits/president-resigns-50-years-later"><em>Nixon Resigns Amid Watergate</em></h3></a> 
+        <time datetime="1974-09-08" class="news-date">August 9, 1974</time>
+        <p>President Nixon steps down after Watergate scandal, the first U.S. presidential resignation.</p>
+        <span class="signifi"><strong>📌</strong> Reinforced democratic accountability and raised transparency standards in governance.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="pastNegativeEcon" class="hidden">
+  
+  <div class="past-section">
+    <div class="col">
+      <h3><a href="https://www.history.com/this-day-in-history/black-monday-stock-market-crash">Black Monday Stock Market Crash</h3></a>
+      <time datetime="1987-10-19" class="news-date">October 19, 1987</time>
+      <p>The Dow Jones plunged over 22% in a single day, the largest one-day percentage drop ever, causing global economic instability.</p>
+      <span class="signifi"><strong>📌</strong> Shattered investor confidence and triggered worldwide market turmoil.</span>
+    <div>
+      <h3><a href="https://www.federalreservehistory.org/essays/nixon-shocks">Nixon Ends Gold Standard, Triggering Economic Uncertainty</h3></a>
+      <time datetime="1971-08-15" class="news-date">August 15, 1971</time>
+      <p>President Nixon suspended gold convertibility of the dollar, ending the Bretton Woods system and igniting inflation fears and economic volatility.</p>
+      <span class="signifi"><strong>📌</strong> Led to stagflation and turbulent currency markets during the 1970s.</span>
+    </div>
+  </div>
+
+    <div class="col photo">
+      <img src="images/pastsoc-neg.png" alt="Black Wall Street Burned to Ashes in White Mob Violence">
+      <h3><a href="https://www.history.com/topics/middle-east/camp-david-accords">Camp David Accords Fail to Resolve Economic Strains</h3></a>
+      <time datetime="1978-09-17" class="news-date">September 17, 1978</time>
+      <p>Despite historic peace agreements, the U.S. economy suffered from oil price shocks and inflation pressures.</p>
+      <span class="signifi"><strong>📌</strong> Demonstrated limits of political progress on immediate economic improvement.</span>
+    </div>
+
+    <div class="col2">
+      <div>
+        <div class="col2text">
+        <h2>Lehman Brothers Collapse</h2>
+        <time datetime="2008-09-29" class="news-date">September 29, 2008</time>
+      </div>
+        <h3><a href="https://www.investopedia.com/articles/economics/09/lehman-brothers-collapse.asp">Lehman Brothers Bankruptcy Triggers Financial Crisis</h3></a>
+        <p>The collapse of Lehman Brothers sparked the global financial crisis, leading to severe economic recession and job losses.</p>
+        <span class="signifi"><strong>📌</strong> Exposed flaws in financial regulations and caused widespread economic devastation.</span>
+      </div>
+      <div>
+        <div class="col2text">
+        <h2>U.K. Leaves the EU</h2>
+        <time datetime="2016-06-23" class="news-date">June 23, 2016</time>
+        </div>
+        <h3><a href="https://www.reuters.com/article/us-britain-eu-markets-idUSKCN0ZE2IE"></h3></a>
+        <p>The UK’s decision to leave the EU caused uncertainty that rattled U.S. markets and trade relations.</p>
+        <span class="signifi"><strong>📌</strong> Highlighted fragility in global economic and political ties.</span>
+      </div>
+    </div>
+
+    <div class="col3">
+      <div>
+        <h3><a href="https://crsreports.congress.gov/product/pdf/LSB/LSB10756"><em>Capitol Riot Shakes U.S. Democracy</em></h3></a>
+        <time datetime="2021-01-06" class="news-date">January 6, 2021</time>
+        <p>Supporters of then-President Trump stormed the U.S. Capitol disrupting the electoral vote count and raising concerns over democratic stability.</p>
+        <span class="signifi"><strong>📌</strong> Highlighted deep political divisions and exposed security vulnerabilities.</span>
+      </div>
+      <div>
+        <img src="images/pastneg-soc1.png" alt="President Orders Mass Internment of Japanese Americans">
+        <h3><a href="https://www.cnbc.com/2020/03/09/stock-market-today-futures-open-to-close-news.html"><em>Stock Market Crash Due to COVID-19 Panic</em></h3></a>
+        <time datetime="2020-03-01" class="news-date">March 1, 2020</time>
+        <p>The Dow Jones dropped over 2,000 points amid fears about the coronavirus pandemic’s economic impact, triggering rapid market selloffs.</p>
+        <span class="signifi"><strong>📌</strong> Sparked the fastest bear market in history and widespread economic disruption.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="pastPositiveWorld" class="hidden">
+  
+  <div class="past-section">
+    <div class="col">
+      <h3><a href="https://www.who.int/news/item/27-07-1921-insulin">Discovery of Insulin Transforms Diabetes Treatment</a></h3>
+      <time datetime="1921-07-27" class="news-date">July 27, 1921</time>
+      <p>Banting and Best isolated insulin, turning diabetes from a fatal disease into a treatable condition.</p>
+      <span class="signifi"><strong>📌</strong> A global medical breakthrough that has saved countless lives worldwide.</span>
+    <div>
+      <h3><a href="https://www.un.org/en/about-us/history-of-un">United Nations Founded to Preserve Peace</a></h3>
+      <time datetime="1945-10-24" class="news-date">October 24, 1945</time>
+      <p>Nations came together after WWII to create the UN, aiming to prevent future global conflict.</p>
+      <span class="signifi"><strong>📌</strong> Established a platform for international cooperation and human rights.</span>
+    </div>
+  </div>
+
+    <div class="col photo">
+      <img src="images/pastsoc-neg.png" alt="Black Wall Street Burned to Ashes in White Mob Violence">
+      <h3><a href="https://www.britannica.com/event/Fall-of-the-Berlin-Wall">Fall of the Berlin Wall Marks a New Era</a></h3>
+      <time datetime="1989-11-09" class="news-date">November 9, 1989</time>
+      <p>East and West Germans reunite as the Berlin Wall crumbles—ending decades of Cold War division.</p>
+      <span class="signifi"><strong>📌</strong> A defining moment of freedom, reunification, and the triumph of democratic movements.</span>
+    </div>
+
+    <div class="col2">
+      <div>
+        <div class="col2text">
+          <h2>Smallpox Declared Eradicated</h2>
+          <time datetime="1980-05-08" class="news-date">May 8, 1980</time>
+        </div>
+        <h3><a href="https://www.who.int/news/item/08-05-2020-commemorating-smallpox-eradication-a-legacy-of-hope-for-covid-19-and-other-diseases">World Declares Smallpox Eradicated</a></h3>
+        <p>The World Health Assembly announced smallpox eradicated—the first human disease eliminated globally.</p>
+        <span class="signifi"><strong>📌</strong> Demonstrated the power of international cooperation and public health.</span>
+      </div>
+      <div>
+        <div class="col2text">
+          <h2>Montreal Protocol Begins Healing Ozone</h2>
+          <time datetime="1987-09-16" class="news-date">September 16, 1987</time>
+        </div>
+        <h3><a href="https://www.state.gov/the-montreal-protocol-on-substances-that-deplete-the-ozone-layer">1987 Montreal Protocol Signed</a></h3>
+        <p>Nations agreed to phase out ozone-destroying chemicals, starting a major environmental recovery.</p>
+        <span class="signifi"><strong>📌</strong> Unitary global action—now healing the ozone and slowing climate change.</span>
+      </div>
+    </div>
+
+    <div class="col3">
+      <div>
+        <h3><a href="https://www.who.int/news/item/09-01-2023-antarctic-healing-ozone-layer"><em>UN Report: Ozone Layer Healing</em></a></h3>
+        <time datetime="2023-01-09" class="news-date">January 9, 2023</time>
+        <p>UN scientists report the Antarctic ozone hole is slowly healing—projected full recovery by 2066.</p>
+        <span class="signifi"><strong>📌</strong> A rare global environmental success, showing regulations can restore planetary systems.</span>  
+      </div>
+      <div>
+        <img src="images/pastneg-soc1.png" alt="President Orders Mass Internment of Japanese Americans">
+        <h3><a href="https://afro.who.int/news/african-region-wild-polio-free">Africa Declared Wild Polio‑Free</a></h3>
+        <time datetime="2020-08-25" class="news-date">August 25, 2020</time>
+        <p>WHO declares the African region free of wild poliovirus following decades of immunization campaigns.</p>
+        <span class="signifi"><strong>📌</strong> A monumental public-health victory that saves countless children’s lives.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="pastNegativeWorld" class="hidden">
+  
+  <div class="past-section">
+    <div class="col">
+      <h3><a href="https://encyclopedia.ushmm.org/content/en/article/the-holocaust">The Holocaust: Genocide in WWII</a></h3>
+      <time datetime="1945-05" class="news-date">May, 1945</time>
+      <p>Over six million Jews and millions of others were systematically murdered by the Nazi regime during WWII.</p>
+      <span class="signifi"><strong>📌</strong> One of history’s most horrifying genocides, it led to global efforts to define human rights and prevent future atrocities.</span>
+    <div>
+      <h3><a href="https://www.britannica.com/event/Rwandan-genocide">Rwandan Genocide Leaves 800,000 Dead</a></h3>
+      <time datetime="1994-04-07" class="news-date">April 7, 1994</time>
+      <p>Over 100 days, mass killings of Tutsi minorities by Hutu extremists devastated Rwanda and shocked the world.</p>
+      <span class="signifi"><strong>📌</strong> A sobering example of the consequences of international inaction and unchecked ethnic hate.</span>
+    </div>
+  </div>
+
+    <div class="col photo">
+      <img src="images/pastsoc-neg.png" alt="Black Wall Street Burned to Ashes in White Mob Violence">
+      <h3><a href="https://www.atomicarchive.com/history/hitokyo/index.html">Atomic Bomb Dropped on Hiroshima</a></h3>
+      <time datetime="1945-08-06" class="news-date">August 6, 1945</time>
+      <p>The U.S. dropped the first atomic bomb on Hiroshima, instantly killing tens of thousands and marking a new era of warfare.</p>
+      <span class="signifi"><strong>📌</strong> Sparked ethical debates about nuclear weapons and ushered in the nuclear age.</span>  
+    </div>
+
+    <div class="col2">
+      <div>
+        <div class="col2text">
+          <h2>Great Chinese Famine</h2>
+          <time datetime="1960-01-01" class="news-date">1960</time>
+       </div>
+       <h3><a href="https://www.britannica.com/event/Great-Chinese-Famine">Tens of Millions Perish in China’s Great Famine</a></h3>
+       <p>Policy failures during Mao’s Great Leap Forward led to mass starvation from 1959–1961, with estimates of 15–45 million dead.</p>
+       <span class="signifi"><strong>📌</strong> Highlights the deadly consequences of authoritarianism and economic mismanagement.</span> 
+      </div>
+      <div>
+        <div class="col2text">
+          <h2>Partition of India</h2>
+          <time datetime="1947-08-15" class="news-date">August 15, 1947</time>  
+        </div>
+        <h3><a href="https://www.bbc.com/news/world-asia-40885727">Partition Sparks Violence Across South Asia</a></h3>
+        <p>The creation of India and Pakistan resulted in mass migration and communal violence, killing an estimated 1 million people.</p>
+        <span class="signifi"><strong>📌</strong> A cautionary tale of rushed political decisions and sectarian division.</span>  
+      </div>
+    </div>
+
+    <div class="col3">
+      <div>
+        <h3><a href="https://www.history.com/topics/iraq/gulf-war">Iraq War Begins Under False Pretenses</a></h3>
+        <time datetime="2003-03-20" class="news-date">March 20, 2003</time>
+        <p>The U.S. invaded Iraq claiming weapons of mass destruction—none were found. The war destabilized the region for decades.</p>
+        <span class="signifi"><strong>📌</strong> Sparked debates on foreign intervention, misinformation, and long-term military entanglements.</span>  
+      </div>
+      <div>
+        <img src="images/pastneg-soc1.png" alt="President Orders Mass Internment of Japanese Americans">
+        <h3><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">Global Pandemic: COVID-19 Shuts Down the World</a></h3>
+        <time datetime="2020-03-11" class="news-date">March 11, 2020</time>
+        <p>COVID-19 was declared a global pandemic by the WHO, resulting in millions of deaths, mass disruption, and a global reckoning on public health.</p>
+        <span class="signifi"><strong>📌</strong> Exposed weaknesses in healthcare systems and deepened economic and social divides worldwide.</span>  
+      </div>
+    </div>
+  </div>
+</section>
 <!--  PAST  -->
 
   <!-- FUTURE -->
@@ -348,7 +764,7 @@
       <div id="vanta-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;"></div>
     
       <!-- Article Content Layer -->
-      <div id="futureContent" style="position: relative; z-index: 1; padding: 1em; color: white;">
+      <div id="futureContent" style="position: relative; z-index: 1; padding: 1em; color: black;">
         <section class="article-grid">
           <!-- Feature + Side Column -->
           <div class="feature-area">
@@ -398,7 +814,7 @@
       <div id="vanta-bg1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;"></div>
     
       <!-- Article Content Layer -->
-      <div id="futureContent" style="position: relative; z-index: 1; padding: 1em; color: white;">
+      <div id="futureContent" style="position: relative; z-index: 1; padding: 1em; color: black;">
         <section class="article-grid">
           <!-- Feature + Side Column -->
           <div class="feature-area">
@@ -418,7 +834,7 @@
               <article class="topfuture-article">
                 <img src="images/futureneg-socgreen.png" alt="bookmarked pg" width="315px">
                 <h1><a href="https://www.nature.com/articles/s41467-022-31572-1">Climate Gentrification: When Green Upgrades Push Residents Out</h1></a>
-                <p> Investments in green infrastructure may lead to increased property values, causing displacement of vulnerable populations.</p>
+                <p>Investments in green infrastructure may lead to increased property values, causing displacement of vulnerable populations.</p>
               </article>
               <article class="topfuture-article">
                 <img src="images/futsoc-negdeepf.png" alt="bookmarked pg" width="315px">
@@ -441,43 +857,206 @@
       </div>
     
     </section>
+
+    <section id="futurePositiveEcon" class="hidden" style="position: relative; min-height: 100vh;">
+      <!-- Vanta Background -->
+      <div id="vanta-bg2" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;"></div>
     
-<!--    
-  <section class="article-grid">
-    <div class="feature-area">
-      <article class="feature-article">
-        <div class="article-text">
-        <a href="https://www.independent.co.uk/tech/renewable-energy-solar-nepal-bhutan-iceland-b2533699.html"><h1>PRESENT POSITIVE TECH</h1></a> 
-        <p>Albania, Bhutan, Nepal, Paraguay, Iceland, Ethiopia and the Dem. Rp. of Congo produced more than 99.7 per cent of their electricity using geothermal, hydro, solar or wind power.</p>
-       </div>
-        <img src="images/feature-article-present.png" alt="bookmarked pg" width="500px">
-      </article>
-
-      <img id="line-side" src="images/line-side.svg" alt="line divider">
-
-      <div class="side-column">
-        <article class="top-article">
-          <img src="images/feature-article-present.png" alt="bookmarked pg" width="375px">
-          <h1>Top News Headline</h1>
-          <p>Albania, Bhutan, Nepal, Paraguay, Iceland, Ethiopia and the Dem. Rp. of Congo produced more than 99.7 per cent of their electricity using geothermal, hydro, solar or wind power.</p>
-        </article>
-        <article class="top-article">
-          <img src="images/feature-article-present.png" alt="bookmarked pg" width="375px">
-          <h1>Top News Headline</h1>
-          <p>Albania, Bhutan, Nepal, Paraguay, Iceland, Ethiopia and the Dem. Rp. of Congo produced more than 99.7 per cent of their electricity using geothermal, hydro, solar or wind power.</p>
-        </article>
+      <!-- Article Content Layer -->
+      <div id="futureContent" style="position: relative; z-index: 1; padding: 1em; color: black;">
+        <section class="article-grid">
+          <!-- Feature + Side Column -->
+          <div class="feature-area">
+            <article class="future-article">
+              <div class="article-text">
+                <a href="https://www.businessinsider.com/recession-prediction-dr-doom-us-economy-nouriel-roubini-markets-outlook-2025-6">
+                  <h1>“Dr. Doom” Now Sees U.S. Economy Booming by 2030</h1>
+                </a>
+                <p>Renowned pessimistic economist Nouriel Roubini forecasts U.S. GDP growth doubling to 4% by 2030, supported by AI-driven gains and fusion energy advances.</p>      
+              </div>
+              <img src="images/futsoc-negAIworkers.png" alt="bookmarked pg" width="450px">
+            </article>
+    
+            <img id="line-side" src="images/line-side.svg" alt="line divider">
+    
+            <div class="sidefuture-column">
+              <article class="topfuture-article">
+                <img src="images/futureneg-socgreen.png" alt="bookmarked pg" width="315px">
+                <h1><a href="https://www.wsj.com/finance/investing/the-u-s-needs-a-productivity-miracle-it-might-just-get-one-c1f4f8de">U.S. Eyes Long-Awaited Productivity Boom</a></h1>
+                <p>Experts note five straight quarters of 2%+ productivity growth—surpassing long-term trends and laying the groundwork for sustained economic gains.</p>      
+              </article>
+              <article class="topfuture-article">
+                <img src="images/futsoc-negdeepf.png" alt="bookmarked pg" width="315px">
+                <h1><a href="https://www.thetimes.co.uk/article/ai-energy-and-medicine-breakthroughs-that-will-shape-the-future-mcm860q35">
+                  A Technological Renaissance Could Define the Next Decade
+                </a></h1>
+                <p>New York Times writers argue that breakthroughs in biotech, clean energy, AI, and fusion are primed to redefine America’s economic and social landscape.</p>      
+              </article>
+            </div>
+    
+            <article class="future-article futurefix">
+              <div class="article-text">
+                <a href="https://time.com/7174892/a-roadmap-to-ai-utopia/">
+                  <h1>Policy Roadmap Supports AI-Driven Prosperity Utopia</h1>
+                </a>
+                <p>A Time feature outlines how AI, paired with UBI and ethical governance, could deliver abundance and shared prosperity—not dystopia—by 2035.</p>      
+              </div>
+              <img src="images/futsoc-negwater.png" alt="bookmarked pg" width="450px">
+            </article>
+          </div>
+        </section>
       </div>
+    
+    </section>
 
-      <article id="feature1" class="feature-article">
-        <div class="article-text">
-        <a href="https://www.independent.co.uk/tech/renewable-energy-solar-nepal-bhutan-iceland-b2533699.html"><h1>7 countries now generate 100% of their electricity from renewables</h1></a> 
-        <p>Albania, Bhutan, Nepal, Paraguay, Iceland, Ethiopia and the Dem. Rp. of Congo produced more than 99.7 per cent of their electricity using geothermal, hydro, solar or wind power.</p>
-       </div>
-        <img src="images/feature-article-present.png" alt="bookmarked pg" width="500px">
-      </article>
-  </section> -->
-  <!-- </section> -->
-  <!-- FUTURE -->
+
+    <section id="futureNegativeEcon" class="hidden" style="position: relative; min-height: 100vh;">
+      <!-- Vanta Background -->
+      <div id="vanta-bg3" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;"></div>
+    
+      <!-- Article Content Layer -->
+      <div id="futureContent" style="position: relative; z-index: 1; padding: 1em; color: black;">
+        <section class="article-grid">
+          <!-- Feature + Side Column -->
+          <div class="feature-area">
+            <article class="future-article">
+              <div class="article-text">
+                <a href="https://www.brookings.edu/articles/the-rise-of-ai-driven-job-replacement-and-its-implications/">
+                  <h1>Mass Job Losses Expected as AI Replaces White-Collar Workers</h1>
+                </a>
+                <p>Experts warn that by 2035, automation and generative AI could displace tens of millions of U.S. office jobs, sparking inequality and unrest unless education and labor policies adapt quickly.</p>
+              </div>      
+              <img src="images/futsoc-negAIworkers.png" alt="bookmarked pg" width="450px">
+            </article>
+    
+            <img id="line-side" src="images/line-side.svg" alt="line divider">
+    
+            <div class="sidefuture-column">
+              <article class="topfuture-article">
+                <img src="images/futureneg-socgreen.png" alt="bookmarked pg" width="315px">
+                <h1><a href="https://climate.mit.edu/posts/cost-carbon-climate-lawsuits-will-transform-global-policy">Lawsuits Over Climate Inaction May Shake Up Global Business</a></h1>
+                <p>Analysts predict that by 2030, major corporations and governments may face a wave of climate liability lawsuits, transforming how businesses account for emissions and environmental harm.</p>      
+              </article>
+              <article class="topfuture-article">
+                <img src="images/futsoc-negdeepf.png" alt="bookmarked pg" width="315px">
+                <h1><a href="https://www.disa.org/summit-addresses-growing-concerns-over-ai-driven-disinformation-2/">Democracies May Struggle to Survive AI-Powered Disinformation</a></h1>
+                <p>Policy researchers warn that by 2032, advanced deepfakes and synthetic media could erode trust in elections and democratic institutions unless urgent regulation is enacted worldwide.</p>      
+              </article>
+            </div>
+    
+            <article class="future-article futurefix">
+              <div class="article-text">
+                <a href="https://www.nature.com/articles/s41560-023-01249-9">
+                  <h1>America’s Southwest Faces Water Rationing by 2040</h1>
+                </a>
+                <p>Scientists and federal agencies project that without drastic conservation or desalination infrastructure, the Colorado River basin could trigger large-scale water shortages across states.</p>      
+              </div>
+              <img src="images/futsoc-negwater.png" alt="bookmarked pg" width="450px">
+            </article>
+          </div>
+        </section>
+      </div>
+    
+    </section>
+
+
+    <section id="futurePositiveWorld" class="hidden" style="position: relative; min-height: 100vh;">
+      <!-- Vanta Background -->
+      <div id="vanta-bg4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;"></div>
+    
+      <!-- Article Content Layer -->
+      <div id="futureContent" style="position: relative; z-index: 1; padding: 1em; color: black;">
+        <section class="article-grid">
+          <!-- Feature + Side Column -->
+          <div class="feature-area">
+            <article class="future-article">
+              <div class="article-text">
+                <a href="https://www.nytimes.com/2024/12/15/business/clean-energy-investment-boom.html">
+                  <h1>Global Clean Energy Investment Set to Break Records by 2030</h1>
+                </a>
+                <p>Massive global funding and tech innovations in solar, wind, and storage are expected to make clean energy the dominant source worldwide within the decade.</p>      
+              </div>
+              <img src="images/futsoc-negAIworkers.png" alt="bookmarked pg" width="450px">
+            </article>
+    
+            <img id="line-side" src="images/line-side.svg" alt="line divider">
+    
+            <div class="sidefuture-column">
+              <article class="topfuture-article">
+                <img src="images/futureneg-socgreen.png" alt="bookmarked pg" width="315px">
+                <h1><a href="https://www.scientificamerican.com/article/how-agritech-could-help-end-world-hunger-by-2040/">AgriTech Advancements Could Help End World Hunger by 2040</a></h1>
+                <p>Experts believe breakthroughs in precision farming, AI crop monitoring, and climate-resilient seeds could make global food security a reality within two decades.</p>              
+              </article>
+              <article class="topfuture-article">
+                <img src="images/futsoc-negdeepf.png" alt="bookmarked pg" width="315px">
+                <h1><a href="https://www.brookings.edu/articles/ai-may-boost-education-access-worldwide-by-2035/">AI May Dramatically Expand Global Education Access</a></h1>
+                <p>AI-driven learning platforms could close the global education gap, reaching millions in underserved regions by 2035.</p>      
+              </article>
+            </div>
+    
+            <article class="future-article futurefix">
+              <div class="article-text">
+                <h1><a href="https://www.reuters.com/business/healthcare-pharmaceuticals/biotech-advances-poised-eradicate-malaria-by-2035-2024-05-22/">Biotech Advances Poised to Eradicate Malaria by 2035</a></h1>
+                <p>Gene-editing technologies and novel vaccines are showing unprecedented success rates in malaria elimination trials across Africa.</p>      
+              </div>
+              <img src="images/futsoc-negwater.png" alt="bookmarked pg" width="450px">
+            </article>
+          </div>
+        </section>
+      </div>
+    
+    </section>
+
+
+    <section id="futureNegativeWorld" class="hidden" style="position: relative; min-height: 100vh;">
+      <!-- Vanta Background -->
+      <div id="vanta-bg5" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;"></div>
+    
+      <!-- Article Content Layer -->
+      <div id="futureContent" style="position: relative; z-index: 1; padding: 1em; color: black;">
+        <section class="article-grid">
+          <!-- Feature + Side Column -->
+          <div class="feature-area">
+            <article class="future-article">
+              <div class="article-text">
+                <h1><a href="https://www.disa.org/summit-addresses-growing-concerns-over-ai-driven-disinformation-2/">Democracies May Struggle to Survive AI-Powered Disinformation</a></h1>
+                <p>Experts warn that deepfakes and synthetic media could erode public trust in democratic elections by 2032 without urgent regulation.</p>      
+              </div>
+              <img src="images/futsoc-negAIworkers.png" alt="bookmarked pg" width="450px">
+            </article>
+    
+            <img id="line-side" src="images/line-side.svg" alt="line divider">
+    
+            <div class="sidefuture-column">
+              <article class="topfuture-article">
+                <img src="images/futureneg-socgreen.png" alt="bookmarked pg" width="315px">
+                <a href="https://www.cnbc.com/2024/10/28/report-predicts-20percent-of-global-jobs-could-be-automated-by-2035.html">
+                  <h1>Report: Automation Could Replace 20% of Global Jobs by 2035</h1>
+                </a>
+                <p>Major research institutions warn that AI and robotics may displace tens of millions of jobs in both advanced and developing economies.</p>      
+              </article>
+              <article class="topfuture-article">
+                <img src="images/futsoc-negdeepf.png" alt="bookmarked pg" width="315px">
+                <h1><a href="https://www.nature.com/articles/s41558-023-01623-2">Climate Tipping Points May Be Reached Sooner Than Expected</a></h1>
+                <p>Recent projections warn that Arctic ice melt and Amazon rainforest dieback could accelerate dramatically by the early 2030s.</p>      
+              </article>
+            </div>
+    
+            <article class="future-article futurefix">
+              <div class="article-text">
+                <a href="https://www.washingtonpost.com/world/2025/03/12/water-scarcity-crisis-un-forecast/">
+                  <h1>UN Forecast: Half the World Could Face Critical Water Shortages by 2040</h1>
+                </a>
+                <p>Climate change, overuse, and mismanagement are projected to cause severe water scarcity across much of the globe in the next 15 years.</p>      
+              </div>
+              <img src="images/futsoc-negwater.png" alt="bookmarked pg" width="450px">
+            </article>
+          </div>
+        </section>
+      </div>
+    
+    </section>
+    <!-- FUTURE -->
 
 </body>
 
